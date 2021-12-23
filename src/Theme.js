@@ -26,8 +26,8 @@ let theme = createTheme({
 						paper: "#c09da7",
 					},
 					text: {
-						primary: "#202020",
-						secondary: "#f3f3f3",
+						primary: "#eeeeee",
+						secondary: "#000000",
 					},
 			  }),
 	},

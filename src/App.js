@@ -1,20 +1,21 @@
 import "./App.css";
-import { CssBaseline, Typography, Paper } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./Theme";
+import NavBar from "./NavBar";
+import Intro from "./Intro";
 
 function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
 			<div className="App">
-				<header className="App-header">
-					<Paper color="primary">
-						<Typography variant="h1" color="#f3f3f3">
-							Hullo World
-						</Typography>
-					</Paper>
+				<header>
+					<NavBar />
 				</header>
+				<main>
+					<Intro />
+				</main>
+				<footer></footer>
 			</div>
 		</ThemeProvider>
 	);
