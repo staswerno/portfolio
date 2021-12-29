@@ -11,6 +11,7 @@ import {
 	Button,
 	MenuItem,
 	Grid,
+	Collapse,
 } from "@mui/material";
 
 const pages = ["about", "skills", "projects", "hobbies", "contact"];
@@ -27,7 +28,7 @@ export default function NavBar() {
 	};
 
 	return (
-		<AppBar position="static">
+		<AppBar position="fixed">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters enableColorOnDark>
 					<Grid
@@ -51,7 +52,7 @@ export default function NavBar() {
 								variant="h5"
 								noWrap
 								component="div"
-								sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}
+								sx={{ display: { xs: "flex", sm: "none" } }}
 							>
 								Staś Werno
 							</Typography>
@@ -59,7 +60,7 @@ export default function NavBar() {
 						<Grid item>
 							<Box
 								mr="auto"
-								sx={{ flexGrow: 0, display: { xs: "flex", sm: "none" } }}
+								sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}
 							>
 								<IconButton
 									size="large"
@@ -71,30 +72,35 @@ export default function NavBar() {
 								>
 									<MenuIcon />
 								</IconButton>
-								<Menu
-									id="menu-appbar"
-									anchorEl={anchorElNav}
-									anchorOrigin={{
-										vertical: "bottom",
-										horizontal: "left",
-									}}
-									keepMounted
-									transformOrigin={{
-										vertical: "top",
-										horizontal: "left",
-									}}
-									open={Boolean(anchorElNav)}
-									onClose={handleCloseNavMenu}
-									sx={{
-										display: { xs: "block", sm: "none" },
-									}}
-								>
-									{pages.map((page) => (
-										<MenuItem key={page} onClick={handleCloseNavMenu}>
-											<Typography textAlign="center">{page}</Typography>
-										</MenuItem>
-									))}
-								</Menu>
+
+								<Box>
+									<Collapse in={true} timeout={8000}>
+										<Menu
+											id="menu-appbar"
+											anchorEl={anchorElNav}
+											anchorOrigin={{
+												vertical: "bottom",
+												horizontal: "left",
+											}}
+											keepMounted
+											transformOrigin={{
+												vertical: "top",
+												horizontal: "left",
+											}}
+											open={Boolean(anchorElNav)}
+											onClose={handleCloseNavMenu}
+											sx={{
+												display: { xs: "block", sm: "none" },
+											}}
+										>
+											{pages.map((page) => (
+												<MenuItem key={page} onClick={handleCloseNavMenu}>
+													<Typography textAlign="center">{page}</Typography>
+												</MenuItem>
+											))}
+										</Menu>
+									</Collapse>
+								</Box>
 							</Box>
 						</Grid>
 						<Grid item>

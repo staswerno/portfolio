@@ -8,16 +8,15 @@ import {
 	Typography,
 	Fade,
 } from "@mui/material";
-import { minHeight } from "@mui/system";
 import portrait from "./images/portrait.png";
 
 export default function Intro() {
 	return (
 		<Box
-			mt={{ xs: 3, sm: 4, md: 6, lg: 6, xl: 0 }}
+			mt={{ xs: 10, sm: 12, md: 16, lg: 16, xl: 16 }}
 			sx={{
 				width: "90%",
-				height: "80vh",
+				//	height: "100%",
 				display: "flex",
 				backgroundColor: "primary",
 				mx: "auto",
@@ -27,11 +26,12 @@ export default function Intro() {
 				container
 				justifyContent="space-around"
 				alignItems="center"
-				rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
+				//	rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
+				mb={{ xs: 6, lg: 12 }}
 			>
-				<Grid item xs={9} sm={8} md={4} lg={4}>
+				<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
 					<Fade in={true} timeout={1000}>
-						<Card sx={{ maxWidth: 700 }}>
+						<Card sx={{ maxWidth: 527 }}>
 							<CardActionArea>
 								<CardMedia
 									component="img"
@@ -44,7 +44,7 @@ export default function Intro() {
 					</Fade>
 				</Grid>
 
-				<Grid item xs={9} sm={8} md={6} lg={6}>
+				<Grid item xs={9} sm={8} md={5} lg={6} m={4}>
 					<Fade in={true} timeout={2000}>
 						<Paper>
 							<Box p={4}>
