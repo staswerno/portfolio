@@ -5,6 +5,9 @@ import NavBar from "./NavBar";
 import Intro from "./Intro";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Hobbies from "./Hobbies";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
 	return (
@@ -18,8 +21,12 @@ function App() {
 					<Intro />
 					<Skills />
 					<Projects />
+					<Hobbies />
+					<Contact />
 				</main>
-				<footer></footer>
+				<footer>
+					<Footer />
+				</footer>
 			</div>
 		</ThemeProvider>
 	);

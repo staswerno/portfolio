@@ -3,7 +3,6 @@ import {
 	Box,
 	Paper,
 	Card,
-	CardActionArea,
 	CardMedia,
 	Typography,
 	Fade,
@@ -32,14 +31,12 @@ export default function Intro() {
 				<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
 					<Fade in={true} timeout={1000}>
 						<Card sx={{ maxWidth: 527 }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="100%"
-									image={portrait}
-									alt="portrait"
-								/>
-							</CardActionArea>
+							<CardMedia
+								component="img"
+								height="100%"
+								image={portrait}
+								alt="portrait"
+							/>
 						</Card>
 					</Fade>
 				</Grid>

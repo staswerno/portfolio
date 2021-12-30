@@ -58,7 +58,7 @@ export default function Skills() {
 					alignItems="center"
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
-					<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 6 }}>
+					<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 7 }}>
 						<Fade in={true} timeout={1000}>
 							<Paper>
 								<Box px={4} py={2}>
@@ -285,7 +285,7 @@ export default function Skills() {
 							</Paper>
 						</Fade>
 					</Grid>
-					<Grid item xs={9} sm={8} item md={4} m={3} mb={6}>
+					<Grid item xs={9} sm={8} item md={4} m={3} mb={7}>
 						<Fade in={true} timeout={2000}>
 							<Paper>
 								<Box px={4} py={2}>

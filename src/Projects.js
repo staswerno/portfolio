@@ -19,7 +19,7 @@ import ghostlolly from "./images/project-ghostlolly.png";
 export default function Projects() {
 	return (
 		<Box
-			mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
+			mt={{ xs: 1, sm: 2, md: 6, lg: 6, xl: 3 }}
 			sx={{
 				width: "90%",
 				//	height: "80vh",
@@ -51,6 +51,7 @@ export default function Projects() {
 						container
 						justifyContent="space-around"
 						alignItems="center"
+						mb={{ xs: 3, md: 6 }}
 						//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 					>
 						<Grid item m={3} mb={{ xs: 3, md: 6 }}>
