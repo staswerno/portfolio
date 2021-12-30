@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.00e890d2.css",
-    "main.js": "/portfolio/static/js/main.eaa7d284.js",
+    "main.js": "/portfolio/static/js/main.09ef492a.js",
     "static/media/project-whereami.png": "/portfolio/static/media/project-whereami.469a8596ea41cca609a4.png",
-    "static/media/project-spaceblog.png": "/portfolio/static/media/project-spaceblog.53770c6f5007b7dcddfc.png",
+    "static/media/project-spaceblog.png": "/portfolio/static/media/project-spaceblog.371164f33140064b0f16.png",
     "static/media/project-ghostlolly.png": "/portfolio/static/media/project-ghostlolly.6ca13262b92aca9957a5.png",
     "static/media/space.png": "/portfolio/static/media/space.cd1cb6f809710305436d.png",
     "static/media/portrait.png": "/portfolio/static/media/portrait.5d8c16234490f1ec45be.png",
@@ -15,10 +15,10 @@
     "static/media/photo-hajiali-sm-ic.jpg": "/portfolio/static/media/photo-hajiali-sm-ic.5dcfc8061c8fe6bef7e0.jpg",
     "index.html": "/portfolio/index.html",
     "main.00e890d2.css.map": "/portfolio/static/css/main.00e890d2.css.map",
-    "main.eaa7d284.js.map": "/portfolio/static/js/main.eaa7d284.js.map"
+    "main.09ef492a.js.map": "/portfolio/static/js/main.09ef492a.js.map"
   },
   "entrypoints": [
     "static/css/main.00e890d2.css",
-    "static/js/main.eaa7d284.js"
+    "static/js/main.09ef492a.js"
   ]
 }
