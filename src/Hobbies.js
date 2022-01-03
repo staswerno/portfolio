@@ -1,16 +1,5 @@
-import {
-	Grid,
-	Box,
-	Paper,
-	Card,
-	CardMedia,
-	CardHeader,
-	Avatar,
-	Typography,
-	Fade,
-	Grow,
-} from "@mui/material";
-import space from "./images/space.png";
+import { Grid, Paper, Typography, Fade } from "@mui/material";
+
 import flohmarkt_icon from "./images/photo-flohmarkt-sm-ic.jpg";
 import forest_icon from "./images/photo-forest-sm-ic.jpg";
 import hajiali_icon from "./images/photo-hajiali-sm-ic.jpg";
@@ -19,7 +8,22 @@ import nepal_icon from "./images/photo-nepal-sm-ic.jpg";
 import shan_icon from "./images/photo-shan-sm-ic.jpg";
 import prayer_icon from "./images/photo-prayer-sm-ic.jpg";
 import boudhanath_icon from "./images/photo-boudhanath-sm-ic.jpg";
+import thailand_icon from "./images/photo-thailand-sm-ic.jpg";
+
+import flohmarkt_photo from "./images/photo-flohmarkt-sm.jpg";
+import forest_photo from "./images/photo-forest-sm.jpg";
+import hajiali_photo from "./images/photo-hajiali-sm.jpg";
+import joponono_photo from "./images/photo-joponono-sm.jpg";
+import nepal_photo from "./images/photo-nepal-sm.jpg";
+import shan_photo from "./images/photo-shan-sm.jpg";
+import prayer_photo from "./images/photo-prayer-sm.jpg";
+import boudhanath_photo from "./images/photo-boudhanath-sm.jpg";
+import thailand_photo from "./images/photo-thailand-sm.jpg";
+
 import MediaCard from "./MediaCard";
+import DrawingCarousel from "./DrawingCarousel";
+import ModalPhoto from "./ModalPhoto";
+
 import AudioPlayer from "material-ui-audio-player";
 
 export default function Hobbies() {
@@ -54,118 +58,35 @@ export default function Hobbies() {
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
 					<Grid item xs={9} sm={8} md={4} m={3} mb={{ xs: 3, md: 7 }}>
-						<Fade in={true} timeout={1000}>
-							<Card sx={{ maxWidth: 527 }}>
-								<CardMedia
-									component="img"
-									height="100%"
-									image={space}
-									alt="portrait"
-								/>
-							</Card>
-						</Fade>
+						<DrawingCarousel />
 					</Grid>
 					<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
 						<Grid container>
 							<Grid container justifyContent="space-around">
-								<Card sx={{ maxWidth: 80, margin: 2 }}>
-									<CardMedia
-										component="img"
-										height="100%"
-										image={shan_icon}
-										alt="photo thumbnail"
-									/>
-								</Card>
-								<Card sx={{ maxWidth: 80, margin: 2 }}>
-									<CardMedia
-										component="img"
-										height="100%"
-										image={flohmarkt_icon}
-										alt="photo thumbnail"
-									/>
-								</Card>
-								<Card sx={{ maxWidth: 80, margin: 2 }}>
-									<CardMedia
-										component="img"
-										height="100%"
-										image={hajiali_icon}
-										alt="photo thumbnail"
-									/>
-								</Card>
+								<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
 
-								{/* <Box m={2}>
-										<img
-											className="small"
-											src={boudhanath_icon}
-											// onClick={this.handleShowDialog}
-											alt="photo thumbnail"
-											//  width="60"
-										/>
-									</Box>
-									<Box m={2}>
-										{" "}
-										<img
-											className="small"
-											src={boudhanath_icon}
-											// onClick={this.handleShowDialog}
-											alt="photo thumbnail"
-										/>
-									</Box>
-									<Box m={2}>
-										{" "}
-										<img
-											className="small"
-											src={boudhanath_icon}
-											// onClick={this.handleShowDialog}
-											alt="photo thumbnail"
-										/>
-									</Box> */}
-								{/* <Box m={2}>
-										{" "}
-										<img
-											className="small"
-											src={boudhanath_icon}
-											// onClick={this.handleShowDialog}
-											alt="photo thumbnail"
-										/>
-									</Box> */}
+								<ModalPhoto
+									modalIcon={thailand_icon}
+									modalImage={thailand_photo}
+								/>
+
+								<ModalPhoto
+									modalIcon={joponono_icon}
+									modalImage={joponono_photo}
+								/>
+								{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
 							</Grid>
 							<Grid container justifyContent="space-around">
-								<Box m={2}>
-									<img
-										className="small"
-										src={joponono_icon}
-										// onClick={this.handleShowDialog}
-										alt="photo thumbnail"
-									/>
-								</Box>
-								<Box m={2}>
-									{" "}
-									<img
-										className="small"
-										src={nepal_icon}
-										// onClick={this.handleShowDialog}
-										alt="photo thumbnail"
-									/>
-								</Box>
-								<Box m={2}>
-									{" "}
-									<img
-										className="small"
-										src={forest_icon}
-										// onClick={this.handleShowDialog}
-										alt="photo thumbnail"
-									/>
-								</Box>
-								{/* <Box m={2}>
-										{" "}
-										<img
-											className="small"
-											src={boudhanath_icon}
-											// onClick={this.handleShowDialog}
-											alt="photo thumbnail"
-										/>
-									</Box> */}
+								<ModalPhoto modalIcon={nepal_icon} modalImage={nepal_photo} />
+								<ModalPhoto
+									modalIcon={hajiali_icon}
+									modalImage={hajiali_photo}
+								/>
+								<ModalPhoto
+									modalIcon={flohmarkt_icon}
+									modalImage={flohmarkt_photo}
+								/>
+								{/* <ModalPhoto modalIcon={prayer_icon} /> */}
 							</Grid>
 							<Grid container justifyContent="center" m={4}>
 								{/* <AudioPlayer /> */}
