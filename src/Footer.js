@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Link, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
@@ -23,12 +23,32 @@ export default function Footer() {
 			>
 				<Grid item m={3} mt={{ xs: 6, sm: 3 }}>
 					<Typography variant="h6" align="center">
-						staswerno@gmail.com | © 2022
+						<Link
+							href="mailto:staswerno@gmail.com"
+							color="inherit"
+							underline="none"
+						>
+							staswerno@gmail.com
+						</Link>{" "}
+						| © 2022
 					</Typography>
 				</Grid>
 				<Grid item m={3} mb={{ xs: 6, sm: 3 }}>
-					<GitHubIcon sx={{ mx: 2 }} fontSize="large" />
-					<LinkedInIcon fontSize="large" />
+					<IconButton
+						sx={{ mx: 2 }}
+						href="https://github.com/staswerno"
+						target="_blank"
+						alt="github page"
+					>
+						<GitHubIcon fontSize="large" />
+					</IconButton>
+					<IconButton
+						href="https://www.linkedin.com/in/staswerno/"
+						target="_blank"
+						alt="linkedin page"
+					>
+						<LinkedInIcon fontSize="large" />
+					</IconButton>
 				</Grid>
 			</Grid>
 		</Box>

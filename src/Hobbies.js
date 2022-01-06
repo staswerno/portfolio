@@ -28,74 +28,76 @@ import AudioPlayer from "material-ui-audio-player";
 
 export default function Hobbies() {
 	return (
-		<Paper
-			mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
-			sx={{
-				width: "90%",
-				//	height: "80vh",
-				display: "flex",
-				backgroundColor: "#bac3c9",
-				mx: "auto",
-			}}
-		>
-			<Grid
-				container
-				justifyContent="space-around"
-				alignItems="center"
-				//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
+		<section id="hobbies">
+			<Paper
+				mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
+				sx={{
+					width: "90%",
+					//	height: "80vh",
+					display: "flex",
+					backgroundColor: "#bac3c9",
+					mx: "auto",
+				}}
 			>
-				<Grid item m={3} mt={6}>
-					<Paper sx={{ width: 210 }}>
-						<Typography variant="h5" align="center" px={4} py={2}>
-							hobbies
-						</Typography>
-					</Paper>
-				</Grid>
 				<Grid
 					container
 					justifyContent="space-around"
 					alignItems="center"
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
-					<Grid item xs={9} sm={8} md={4} m={3} mb={{ xs: 3, md: 7 }}>
-						<DrawingCarousel />
+					<Grid item m={3} mt={6}>
+						<Paper sx={{ width: 210 }}>
+							<Typography variant="h5" align="center" px={4} py={2}>
+								hobbies
+							</Typography>
+						</Paper>
 					</Grid>
-					<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
-						<Grid container>
-							<Grid container justifyContent="space-around">
-								<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
+					<Grid
+						container
+						justifyContent="space-around"
+						alignItems="center"
+						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
+					>
+						<Grid item xs={9} sm={8} md={4} m={3} mb={{ xs: 3, md: 7 }}>
+							<DrawingCarousel />
+						</Grid>
+						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
+							<Grid container>
+								<Grid container justifyContent="space-around">
+									<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
 
-								<ModalPhoto
-									modalIcon={thailand_icon}
-									modalImage={thailand_photo}
-								/>
+									<ModalPhoto
+										modalIcon={thailand_icon}
+										modalImage={thailand_photo}
+									/>
 
-								<ModalPhoto
-									modalIcon={joponono_icon}
-									modalImage={joponono_photo}
-								/>
-								{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
-							</Grid>
-							<Grid container justifyContent="space-around">
-								<ModalPhoto modalIcon={nepal_icon} modalImage={nepal_photo} />
-								<ModalPhoto
-									modalIcon={hajiali_icon}
-									modalImage={hajiali_photo}
-								/>
-								<ModalPhoto
-									modalIcon={flohmarkt_icon}
-									modalImage={flohmarkt_photo}
-								/>
-								{/* <ModalPhoto modalIcon={prayer_icon} /> */}
-							</Grid>
-							<Grid container justifyContent="center" m={4}>
-								{/* <AudioPlayer /> */}
-								<MediaCard />
+									<ModalPhoto
+										modalIcon={joponono_icon}
+										modalImage={joponono_photo}
+									/>
+									{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
+								</Grid>
+								<Grid container justifyContent="space-around">
+									<ModalPhoto modalIcon={nepal_icon} modalImage={nepal_photo} />
+									<ModalPhoto
+										modalIcon={hajiali_icon}
+										modalImage={hajiali_photo}
+									/>
+									<ModalPhoto
+										modalIcon={flohmarkt_icon}
+										modalImage={flohmarkt_photo}
+									/>
+									{/* <ModalPhoto modalIcon={prayer_icon} /> */}
+								</Grid>
+								<Grid container justifyContent="center" m={4}>
+									{/* <AudioPlayer /> */}
+									<MediaCard />
+								</Grid>
 							</Grid>
 						</Grid>
 					</Grid>
 				</Grid>
-			</Grid>
-		</Paper>
+			</Paper>
+		</section>
 	);
 }

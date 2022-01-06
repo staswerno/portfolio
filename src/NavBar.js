@@ -13,6 +13,7 @@ import {
 	Grid,
 	Collapse,
 } from "@mui/material";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const pages = ["about", "skills", "projects", "hobbies", "contact"];
 
@@ -93,11 +94,28 @@ export default function NavBar() {
 												display: { xs: "block", sm: "none" },
 											}}
 										>
-											{pages.map((page) => (
-												<MenuItem key={page} onClick={handleCloseNavMenu}>
-													<Typography textAlign="center">{page}</Typography>
-												</MenuItem>
-											))}
+											{pages.map((page) => {
+												const pageAnchor = `#${page}`;
+												return (
+													<MenuItem
+														key={pageAnchor}
+														onClick={handleCloseNavMenu}
+													>
+														<AnchorLink
+															style={{ textDecoration: "none" }}
+															offset="100"
+															href={pageAnchor}
+														>
+															<Typography
+																textAlign="center"
+																color="text.primary"
+															>
+																{page}
+															</Typography>
+														</AnchorLink>
+													</MenuItem>
+												);
+											})}
 										</Menu>
 									</Collapse>
 								</Box>
@@ -108,15 +126,30 @@ export default function NavBar() {
 								mr="auto"
 								sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}
 							>
-								{pages.map((page) => (
-									<Button
-										key={page}
-										onClick={handleCloseNavMenu}
-										sx={{ my: 2, color: "inherit", display: "block" }}
-									>
-										{page}
-									</Button>
-								))}
+								{pages.map((page) => {
+									const pageAnchor = `#${page}`;
+									return (
+										<AnchorLink
+											offset="100"
+											underline="none"
+											style={{ textDecoration: "none" }}
+											href={pageAnchor}
+										>
+											<Button
+												key={page}
+												onClick={handleCloseNavMenu}
+												sx={{
+													my: 2,
+													color: "text.primary",
+
+													display: "block",
+												}}
+											>
+												{page}
+											</Button>
+										</AnchorLink>
+									);
+								})}
 							</Box>
 						</Grid>
 					</Grid>

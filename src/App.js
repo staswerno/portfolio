@@ -1,5 +1,5 @@
 import "./App.css";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider, Typography } from "@mui/material";
 import { theme } from "./Theme";
 import NavBar from "./NavBar";
 import Intro from "./Intro";
@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function App() {
 	return (
