@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.00e890d2.css",
+    "main.css": "/portfolio/static/css/main.7ca42a6b.css",
     "main.js": "/portfolio/static/js/main.b87d25df.js",
     "static/media/photo-nepal-sm.jpg": "/portfolio/static/media/photo-nepal-sm.1739f3d04f534929387f.jpg",
     "static/media/photo-hajiali-sm.jpg": "/portfolio/static/media/photo-hajiali-sm.1e596b0b9c1a7de22a8f.jpg",
@@ -24,11 +24,11 @@
     "static/media/photo-prayer-sm-ic.jpg": "/portfolio/static/media/photo-prayer-sm-ic.de5c5e4181755511b123.jpg",
     "static/media/photo-hajiali-sm-ic.jpg": "/portfolio/static/media/photo-hajiali-sm-ic.5dcfc8061c8fe6bef7e0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.00e890d2.css.map": "/portfolio/static/css/main.00e890d2.css.map",
+    "main.7ca42a6b.css.map": "/portfolio/static/css/main.7ca42a6b.css.map",
     "main.b87d25df.js.map": "/portfolio/static/js/main.b87d25df.js.map"
   },
   "entrypoints": [
-    "static/css/main.00e890d2.css",
+    "static/css/main.7ca42a6b.css",
     "static/js/main.b87d25df.js"
   ]
 }

@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.00e890d2.css","mappings":"AAAA,aACC,yEAAsC,CACtC,qBACD","sources":["App.css"],"sourcesContent":[".portrait-bg {\n\tbackground: url(\"images/portrait.png\");\n\tbackground-size: cover;\n}\n"],"names":[],"sourceRoot":""}
