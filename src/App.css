@@ -1,3 +1,10 @@
+* {
+	-ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
 .portrait-bg {
 	background: url("images/portrait.png");
 	background-size: cover;
