@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography, Fade } from "@mui/material";
+import { Grid, Paper, Typography, Grow } from "@mui/material";
 
 import flohmarkt_icon from "./images/photo-flohmarkt-sm-ic.jpg";
 import forest_icon from "./images/photo-forest-sm-ic.jpg";
@@ -63,32 +63,39 @@ export default function Hobbies() {
 						</Grid>
 						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
 							<Grid container>
-								<Grid container justifyContent="space-around">
-									<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
+								<Grow in={true} timeout={1200}>
+									<Grid container justifyContent="space-around">
+										<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
 
-									<ModalPhoto
-										modalIcon={thailand_icon}
-										modalImage={thailand_photo}
-									/>
+										<ModalPhoto
+											modalIcon={thailand_icon}
+											modalImage={thailand_photo}
+										/>
 
-									<ModalPhoto
-										modalIcon={joponono_icon}
-										modalImage={joponono_photo}
-									/>
-									{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
-								</Grid>
-								<Grid container justifyContent="space-around">
-									<ModalPhoto modalIcon={nepal_icon} modalImage={nepal_photo} />
-									<ModalPhoto
-										modalIcon={hajiali_icon}
-										modalImage={hajiali_photo}
-									/>
-									<ModalPhoto
-										modalIcon={flohmarkt_icon}
-										modalImage={flohmarkt_photo}
-									/>
-									{/* <ModalPhoto modalIcon={prayer_icon} /> */}
-								</Grid>
+										<ModalPhoto
+											modalIcon={joponono_icon}
+											modalImage={joponono_photo}
+										/>
+										{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
+									</Grid>
+								</Grow>
+								<Grow in={true} timeout={1200}>
+									<Grid container justifyContent="space-around">
+										<ModalPhoto
+											modalIcon={nepal_icon}
+											modalImage={nepal_photo}
+										/>
+										<ModalPhoto
+											modalIcon={hajiali_icon}
+											modalImage={hajiali_photo}
+										/>
+										<ModalPhoto
+											modalIcon={flohmarkt_icon}
+											modalImage={flohmarkt_photo}
+										/>
+										{/* <ModalPhoto modalIcon={prayer_icon} /> */}
+									</Grid>
+								</Grow>
 								<Grid container justifyContent="center" m={4}>
 									{/* <AudioPlayer /> */}
 									<MediaCard />

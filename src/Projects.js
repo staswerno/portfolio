@@ -56,7 +56,7 @@ export default function Projects() {
 							//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 						>
 							<Grid item m={3} mb={{ xs: 3, md: 6 }}>
-								<Grow in={true} timeout={2000}>
+								<Grow in={true} timeout={900}>
 									<Card sx={{ maxWidth: 250, height: 340 }}>
 										<CardActionArea>
 											<CardMedia
@@ -110,7 +110,7 @@ export default function Projects() {
 								</Grow>
 							</Grid>
 							<Grid item m={3} mb={{ xs: 3, md: 6 }}>
-								<Grow in={true} timeout={3000}>
+								<Grow in={true} timeout={1200}>
 									<Card sx={{ maxWidth: 250, height: 340 }}>
 										<CardActionArea>
 											<CardMedia
@@ -164,7 +164,7 @@ export default function Projects() {
 								</Grow>
 							</Grid>
 							<Grid item m={3} mb={{ xs: 3, md: 6 }}>
-								<Grow in={true} timeout={4000}>
+								<Grow in={true} timeout={1500}>
 									<Card sx={{ maxWidth: 250, height: 340 }}>
 										<CardActionArea>
 											<CardMedia

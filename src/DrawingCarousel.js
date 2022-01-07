@@ -3,7 +3,7 @@ import space from "./images/space.png";
 
 export default function DrawingCarousel() {
 	return (
-		<Grow in={true} timeout={1000}>
+		<Grow in={true} timeout={900}>
 			<Card sx={{ maxWidth: 527 }}>
 				<CardMedia
 					component="img"

@@ -7,6 +7,7 @@ import {
 	Typography,
 	Fade,
 	Grow,
+	Zoom,
 } from "@mui/material";
 import portrait from "./images/portrait.png";
 
@@ -31,7 +32,7 @@ export default function Intro() {
 					mb={{ xs: 6, lg: 12 }}
 				>
 					<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
-						<Grow in={true} timeout={1000}>
+						<Grow in={true} timeout={900}>
 							<Card sx={{ maxWidth: 527 }}>
 								<CardMedia
 									component="img"
@@ -44,7 +45,7 @@ export default function Intro() {
 					</Grid>
 
 					<Grid item xs={9} sm={8} md={5} lg={6} m={4}>
-						<Grow in={true} timeout={2000}>
+						<Grow in={true} timeout={1200}>
 							<Paper>
 								<Box p={4}>
 									<Typography variant="h6" mb={2}>

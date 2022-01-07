@@ -7,6 +7,7 @@ import {
 	Typography,
 	Fade,
 	Grow,
+	Zoom,
 } from "@mui/material";
 import muiicon from "./images/icon-mui-dummy.png";
 import htmlicon from "./images/icon-html-dummy.png";
@@ -60,7 +61,7 @@ export default function Skills() {
 						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 					>
 						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 7 }}>
-							<Grow in={true} timeout={1000}>
+							<Grow in={true} timeout={900}>
 								<Paper>
 									<Box px={4} py={2}>
 										<Typography variant="h6" align="center" mb={2}>
@@ -74,7 +75,7 @@ export default function Skills() {
 											// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
 										>
 											<Grid item>
-												<Grow in={true} timeout={2000}>
+												<Zoom in={true} timeout={1100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -93,8 +94,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2300}>
+												</Zoom>
+												<Zoom in={true} timeout={1300}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -113,8 +114,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2600}>
+												</Zoom>
+												<Zoom in={true} timeout={1500}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -133,8 +134,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2900}>
+												</Zoom>
+												<Zoom in={true} timeout={1700}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -153,8 +154,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3200}>
+												</Zoom>
+												<Zoom in={true} timeout={1900}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -173,8 +174,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3500}>
+												</Zoom>
+												<Zoom in={true} timeout={2100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -193,10 +194,10 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
+												</Zoom>
 											</Grid>
 											<Grid item>
-												<Grow in={true} timeout={2000}>
+												<Zoom in={true} timeout={1100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -215,8 +216,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2300}>
+												</Zoom>
+												<Zoom in={true} timeout={1300}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -235,8 +236,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2600}>
+												</Zoom>
+												<Zoom in={true} timeout={1500}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -255,8 +256,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={2900}>
+												</Zoom>
+												<Zoom in={true} timeout={1700}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -275,8 +276,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3200}>
+												</Zoom>
+												<Zoom in={true} timeout={1900}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -295,8 +296,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3500}>
+												</Zoom>
+												<Zoom in={true} timeout={2100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -315,7 +316,7 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
+												</Zoom>
 											</Grid>
 										</Grid>
 									</Box>
@@ -323,7 +324,7 @@ export default function Skills() {
 							</Grow>
 						</Grid>
 						<Grid item xs={9} sm={8} item md={4} m={3} mb={7}>
-							<Grow in={true} timeout={2000}>
+							<Grow in={true} timeout={1200}>
 								<Paper>
 									<Box px={4} py={2}>
 										<Typography variant="h6" align="center" mb={2}>
@@ -336,7 +337,7 @@ export default function Skills() {
 											//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 										>
 											<Grid item>
-												<Grow in={true} timeout={3000}>
+												<Zoom in={true} timeout={1400}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -356,8 +357,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3300}>
+												</Zoom>
+												<Zoom in={true} timeout={1600}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -377,8 +378,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3600}>
+												</Zoom>
+												<Zoom in={true} timeout={1800}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -398,8 +399,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={3900}>
+												</Zoom>
+												<Zoom in={true} timeout={2000}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -419,8 +420,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={4200}>
+												</Zoom>
+												<Zoom in={true} timeout={2200}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -442,8 +443,8 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
-												<Grow in={true} timeout={4500}>
+												</Zoom>
+												<Zoom in={true} timeout={2400}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -463,7 +464,7 @@ export default function Skills() {
 															</Typography>
 														}
 													/>
-												</Grow>
+												</Zoom>
 											</Grid>
 										</Grid>
 									</Box>
