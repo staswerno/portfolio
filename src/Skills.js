@@ -60,7 +60,7 @@ export default function Skills() {
 						alignItems="center"
 						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 					>
-						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 7 }}>
+						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 8 }}>
 							<Grow in={true} timeout={900}>
 								<Paper>
 									<Box px={4} py={2}>
@@ -72,10 +72,11 @@ export default function Skills() {
 											container
 											justifyContent="space-around"
 											alignItems="center"
+
 											// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
 										>
 											<Grid item>
-												<Zoom in={true} timeout={1100}>
+												<Zoom in={true} timeout={1000}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -95,7 +96,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1300}>
+												<Zoom in={true} timeout={1100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -115,7 +116,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1500}>
+												<Zoom in={true} timeout={1200}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -135,7 +136,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1700}>
+												<Zoom in={true} timeout={1300}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -155,7 +156,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1900}>
+												<Zoom in={true} timeout={1400}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -175,7 +176,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={2100}>
+												<Zoom in={true} timeout={1500}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -197,7 +198,7 @@ export default function Skills() {
 												</Zoom>
 											</Grid>
 											<Grid item>
-												<Zoom in={true} timeout={1100}>
+												<Zoom in={true} timeout={1000}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -217,7 +218,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1300}>
+												<Zoom in={true} timeout={1100}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -237,7 +238,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1500}>
+												<Zoom in={true} timeout={1200}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -257,7 +258,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1700}>
+												<Zoom in={true} timeout={1300}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -277,7 +278,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1900}>
+												<Zoom in={true} timeout={1400}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -297,7 +298,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={2100}>
+												<Zoom in={true} timeout={1500}>
 													<CardHeader
 														color="#000000"
 														avatar={
@@ -323,7 +324,7 @@ export default function Skills() {
 								</Paper>
 							</Grow>
 						</Grid>
-						<Grid item xs={9} sm={8} item md={4} m={3} mb={7}>
+						<Grid item xs={9} sm={8} item md={4} m={3} mb={8}>
 							<Grow in={true} timeout={1200}>
 								<Paper>
 									<Box px={4} py={2}>
@@ -337,7 +338,7 @@ export default function Skills() {
 											//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 										>
 											<Grid item>
-												<Zoom in={true} timeout={1400}>
+												<Zoom in={true} timeout={1300}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -358,7 +359,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1600}>
+												<Zoom in={true} timeout={1400}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -379,7 +380,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={1800}>
+												<Zoom in={true} timeout={1500}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -400,7 +401,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={2000}>
+												<Zoom in={true} timeout={1600}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -421,7 +422,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={2200}>
+												<Zoom in={true} timeout={1700}>
 													<CardHeader
 														avatar={
 															<Avatar
@@ -444,7 +445,7 @@ export default function Skills() {
 														}
 													/>
 												</Zoom>
-												<Zoom in={true} timeout={2400}>
+												<Zoom in={true} timeout={1800}>
 													<CardHeader
 														avatar={
 															<Avatar

@@ -15,7 +15,7 @@ export default function Intro() {
 	return (
 		<section id="about">
 			<Box
-				mt={{ xs: 10, sm: 12, md: 16, lg: 16, xl: 16 }}
+				mt={{ xs: 10, sm: 12, md: 20, lg: 20, xl: 24 }}
 				sx={{
 					width: "90%",
 					//	height: "100%",
@@ -29,7 +29,7 @@ export default function Intro() {
 					justifyContent="space-around"
 					alignItems="center"
 					//	rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
-					mb={{ xs: 6, lg: 12 }}
+					mb={{ xs: 6, md: 12, lg: 16, xl: 18 }}
 				>
 					<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
 						<Grow in={true} timeout={900}>
