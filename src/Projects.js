@@ -78,14 +78,36 @@ export default function Projects() {
 									partialVisibility={true}
 								>
 									<Grow in={inViewA} timeout={900}>
-										<Card sx={{ maxWidth: 250, height: 340 }}>
-											<CardActionArea>
-												<CardMedia
-													component="img"
-													height="140"
-													image={spaceblog}
-													alt="space blog"
-												/>
+										<Card
+											sx={{
+												maxWidth: 260,
+												height: 340,
+											}}
+										>
+											<CardActionArea
+												sx={{
+													backgroundColor: "#121212",
+												}}
+											>
+												<Box
+													sx={{
+														overflow: "hidden",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={spaceblog}
+														alt="space blog"
+														sx={{
+															transition: "all ease-in-out .4s",
+															"&:hover": {
+																transform: "scale(1.15) ",
+																opacity: 0.3,
+															},
+														}}
+													/>
+												</Box>
 											</CardActionArea>
 											<CardContent>
 												<Typography gutterBottom variant="h5" component="div">
@@ -138,13 +160,30 @@ export default function Projects() {
 								>
 									<Grow in={inViewB} timeout={1200}>
 										<Card sx={{ maxWidth: 250, height: 340 }}>
-											<CardActionArea>
-												<CardMedia
-													component="img"
-													height="140"
-													image={whereami}
-													alt="space blog"
-												/>
+											<CardActionArea
+												sx={{
+													backgroundColor: "#121212",
+												}}
+											>
+												<Box
+													sx={{
+														overflow: "hidden",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={whereami}
+														alt="where am i"
+														sx={{
+															transition: "all ease-in-out .4s",
+															"&:hover": {
+																transform: "scale(1.15) ",
+																opacity: 0.3,
+															},
+														}}
+													/>
+												</Box>
 											</CardActionArea>
 											<CardContent>
 												<Typography gutterBottom variant="h5" component="div">
@@ -197,13 +236,30 @@ export default function Projects() {
 								>
 									<Grow in={inViewC} timeout={1500}>
 										<Card sx={{ maxWidth: 250, height: 340 }}>
-											<CardActionArea>
-												<CardMedia
-													component="img"
-													height="140"
-													image={ghostlolly}
-													alt="space blog"
-												/>
+											<CardActionArea
+												sx={{
+													backgroundColor: "#121212",
+												}}
+											>
+												<Box
+													sx={{
+														overflow: "hidden",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={ghostlolly}
+														alt="ghost lolly"
+														sx={{
+															transition: "all ease-in-out .4s",
+															"&:hover": {
+																transform: "scale(1.15) ",
+																opacity: 0.3,
+															},
+														}}
+													/>
+												</Box>
 											</CardActionArea>
 											<CardContent>
 												<Typography gutterBottom variant="h5" component="div">

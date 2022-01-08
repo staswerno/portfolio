@@ -14,7 +14,7 @@ const style = {
 	maxWidth: "100vh",
 
 	bgcolor: "#000",
-	border: "2px solid #000",
+	border: "0px solid #000",
 	boxShadow: 24,
 	p: 0,
 };
@@ -26,7 +26,17 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 
 	return (
 		<div>
-			<Card sx={{ maxWidth: 80, margin: 2 }}>
+			<Card
+				sx={{
+					maxWidth: 80,
+					margin: 2,
+					transition: "all ease-in-out .4s",
+					"&:hover": {
+						transform: "scale(1.15) ",
+						opacity: 1,
+					},
+				}}
+			>
 				<CardActionArea>
 					<CardMedia
 						component="img"
@@ -34,6 +44,13 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 						image={modalIcon}
 						alt="photo thumbnail"
 						onClick={handleOpen}
+						// sx={{
+						// transition: "all ease-in-out .4s",
+						// "&:hover": {
+						// 	transform: "scale(1.15) ",
+						// 	opacity: 0.3,
+						// },
+						// }}
 					/>
 				</CardActionArea>
 			</Card>
