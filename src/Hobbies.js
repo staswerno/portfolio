@@ -26,7 +26,24 @@ import ModalPhoto from "./ModalPhoto";
 
 import AudioPlayer from "material-ui-audio-player";
 
+import VisibilitySensor from "react-visibility-sensor";
+import { useState } from "react";
+
 export default function Hobbies() {
+	const [inViewA, setInViewA] = useState(false);
+	const [inViewB, setInViewB] = useState(false);
+	const [inViewC, setInViewC] = useState(false);
+
+	const visibilityFuncA = (isVisible) => {
+		isVisible ? setInViewA(true) : setInViewA(false);
+	};
+	const visibilityFuncB = (isVisible) => {
+		isVisible ? setInViewB(true) : setInViewB(false);
+	};
+	const visibilityFuncC = (isVisible) => {
+		isVisible ? setInViewC(true) : setInViewC(false);
+	};
+
 	return (
 		<section id="hobbies">
 			<Paper
@@ -59,46 +76,69 @@ export default function Hobbies() {
 						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 					>
 						<Grid item xs={9} sm={8} md={4} m={3} mb={{ xs: 3, md: 7 }}>
-							<DrawingCarousel />
+							<VisibilitySensor
+								onChange={visibilityFuncA}
+								partialVisibility={true}
+							>
+								<DrawingCarousel inViewA={inViewA} />
+							</VisibilitySensor>
 						</Grid>
 						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
 							<Grid container>
-								<Grow in={true} timeout={1200}>
-									<Grid container justifyContent="space-around">
-										<ModalPhoto modalIcon={shan_icon} modalImage={shan_photo} />
+								<VisibilitySensor
+									onChange={visibilityFuncB}
+									partialVisibility={true}
+								>
+									<Grow in={inViewB} timeout={1200}>
+										<Grid container justifyContent="space-around">
+											<ModalPhoto
+												modalIcon={shan_icon}
+												modalImage={shan_photo}
+											/>
 
-										<ModalPhoto
-											modalIcon={thailand_icon}
-											modalImage={thailand_photo}
-										/>
+											<ModalPhoto
+												modalIcon={thailand_icon}
+												modalImage={thailand_photo}
+											/>
 
-										<ModalPhoto
-											modalIcon={joponono_icon}
-											modalImage={joponono_photo}
-										/>
-										{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
-									</Grid>
-								</Grow>
-								<Grow in={true} timeout={1200}>
-									<Grid container justifyContent="space-around">
-										<ModalPhoto
-											modalIcon={nepal_icon}
-											modalImage={nepal_photo}
-										/>
-										<ModalPhoto
-											modalIcon={hajiali_icon}
-											modalImage={hajiali_photo}
-										/>
-										<ModalPhoto
-											modalIcon={flohmarkt_icon}
-											modalImage={flohmarkt_photo}
-										/>
-										{/* <ModalPhoto modalIcon={prayer_icon} /> */}
-									</Grid>
-								</Grow>
+											<ModalPhoto
+												modalIcon={joponono_icon}
+												modalImage={joponono_photo}
+											/>
+											{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
+										</Grid>
+									</Grow>
+								</VisibilitySensor>
+								<VisibilitySensor
+									onChange={visibilityFuncB}
+									partialVisibility={true}
+								>
+									<Grow in={inViewB} timeout={1200}>
+										<Grid container justifyContent="space-around">
+											<ModalPhoto
+												modalIcon={nepal_icon}
+												modalImage={nepal_photo}
+											/>
+											<ModalPhoto
+												modalIcon={hajiali_icon}
+												modalImage={hajiali_photo}
+											/>
+											<ModalPhoto
+												modalIcon={flohmarkt_icon}
+												modalImage={flohmarkt_photo}
+											/>
+											{/* <ModalPhoto modalIcon={prayer_icon} /> */}
+										</Grid>
+									</Grow>
+								</VisibilitySensor>
 								<Grid container justifyContent="center" m={4}>
-									{/* <AudioPlayer /> */}
-									<MediaCard />
+									<VisibilitySensor
+										onChange={visibilityFuncC}
+										partialVisibility={true}
+									>
+										{/* <AudioPlayer /> */}
+										<MediaCard inViewC={inViewC} />
+									</VisibilitySensor>
 								</Grid>
 							</Grid>
 						</Grid>

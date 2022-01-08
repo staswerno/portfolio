@@ -11,11 +11,11 @@ import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 
-export default function MediaCard() {
+export default function MediaCard({ inViewC }) {
 	const theme = useTheme();
 
 	return (
-		<Grow in={true} timeout={1200}>
+		<Grow in={inViewC} timeout={1200}>
 			<Card sx={{ display: "flex" }}>
 				<Box sx={{ display: "flex", flexDirection: "column" }}>
 					{/* <CardContent sx={{ flex: "1 0 auto" }}>

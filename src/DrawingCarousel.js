@@ -1,9 +1,9 @@
 import { Card, CardMedia, Fade, Grow } from "@mui/material";
 import space from "./images/space.png";
 
-export default function DrawingCarousel() {
+export default function DrawingCarousel({ inViewA }) {
 	return (
-		<Grow in={true} timeout={900}>
+		<Grow in={inViewA} timeout={900}>
 			<Card sx={{ maxWidth: 527 }}>
 				<CardMedia
 					component="img"

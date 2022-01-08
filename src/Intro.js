@@ -10,8 +10,21 @@ import {
 	Zoom,
 } from "@mui/material";
 import portrait from "./images/portrait.png";
+import VisibilitySensor from "react-visibility-sensor";
+import { useState } from "react";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function Intro() {
+	const [inViewA, setInViewA] = useState(false);
+	const [inViewB, setInViewB] = useState(false);
+
+	const visibilityFuncA = (isVisible) => {
+		isVisible ? setInViewA(true) : setInViewA(false);
+	};
+	const visibilityFuncB = (isVisible) => {
+		isVisible ? setInViewB(true) : setInViewB(false);
+	};
+
 	return (
 		<section id="about">
 			<Box
@@ -32,41 +45,51 @@ export default function Intro() {
 					mb={{ xs: 6, md: 12, lg: 16, xl: 18 }}
 				>
 					<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
-						<Grow in={true} timeout={900}>
+						<Grow in={inViewA} timeout={900}>
 							<Card sx={{ maxWidth: 527 }}>
-								<CardMedia
-									component="img"
-									height="100%"
-									image={portrait}
-									alt="portrait"
-								/>
+								<VisibilitySensor
+									onChange={visibilityFuncA}
+									partialVisibility={true}
+								>
+									<CardMedia
+										component="img"
+										height="100%"
+										image={portrait}
+										alt="portrait"
+									/>
+								</VisibilitySensor>
 							</Card>
 						</Grow>
 					</Grid>
 
 					<Grid item xs={9} sm={8} md={5} lg={6} m={4}>
-						<Grow in={true} timeout={1200}>
+						<Grow in={inViewB} timeout={1200}>
 							<Paper>
-								<Box p={4}>
-									<Typography variant="h6" mb={2}>
-										hi, i’m staś. <br />
-										i’m a full stack web and app developer.
-										<br />
-									</Typography>
-									<Typography variant="body2" color="text.secondary" mb={2}>
-										Motivated as much by self development as software
-										development, I am an engaged and creative worker, and a
-										curious and fast, but precise, learner. My experience
-										working with development teams and tools in the music
-										industry has nurtured a decisive and organised work ethic.{" "}
-									</Typography>
-									<Typography variant="body2" color="text.secondary" mb={2}>
-										Considerate, patient and reflective in nature, I place great
-										importance on authentic relationships, a principle that has
-										guided my additional experience with team leadership and
-										diversity and inclusion.
-									</Typography>
-								</Box>
+								<VisibilitySensor
+									onChange={visibilityFuncB}
+									partialVisibility={true}
+								>
+									<Box p={4}>
+										<Typography variant="h6" mb={2}>
+											hi, i’m staś. <br />
+											i’m a full stack web and app developer.
+											<br />
+										</Typography>
+										<Typography variant="body2" color="text.secondary" mb={2}>
+											Motivated as much by self development as software
+											development, I am an engaged and creative worker, and a
+											curious and fast, but precise, learner. My experience
+											working with development teams and tools in the music
+											industry has nurtured a decisive and organised work ethic.{" "}
+										</Typography>
+										<Typography variant="body2" color="text.secondary" mb={2}>
+											Considerate, patient and reflective in nature, I place
+											great importance on authentic relationships, a principle
+											that has guided my additional experience with team
+											leadership and diversity and inclusion.
+										</Typography>
+									</Box>
+								</VisibilitySensor>
 							</Paper>
 						</Grow>
 					</Grid>

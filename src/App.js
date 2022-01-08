@@ -8,7 +8,6 @@ import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function App() {
 	return (
