@@ -17,8 +17,9 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const pages = ["about", "skills", "projects", "hobbies", "contact"];
 
-export default function NavBar() {
+export default function NavBar({ pageAnchorHighlight }) {
 	const [anchorElNav, setAnchorElNav] = useState(null);
+	// const [pageAnchorHighlight, setPageAnchorHighlight] = useState(true);
 
 	const handleOpenNavMenu = (event) => {
 		setAnchorElNav(event.currentTarget);
@@ -138,6 +139,11 @@ export default function NavBar() {
 											<Button
 												key={page}
 												onClick={handleCloseNavMenu}
+												style={
+													pageAnchorHighlight
+														? { textDecoration: "underline" }
+														: { textDecoration: "none" }
+												}
 												sx={{
 													my: 2,
 													color: "text.primary",
