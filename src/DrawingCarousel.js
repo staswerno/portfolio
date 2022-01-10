@@ -13,10 +13,10 @@ export default function DrawingCarousel({ inViewA }) {
 			<Card sx={{ maxWidth: 527 }}>
 				<Carousel
 					animation={"slide"}
-					duration={1000}
-					interval={3000}
+					duration={2000}
+					interval={4000}
 					indicators={false}
-					navButtonsAlwaysVisible={false}
+					navButtonsAlwaysVisible={true}
 				>
 					{/* <Card sx={{ maxWidth: 527 }}> */}
 					<CardMedia
