@@ -76,14 +76,14 @@ export default function Skills({ anchorFuncB }) {
 						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 8 }}>
 							<Grow in={inViewA} timeout={900}>
 								<Paper>
-									<VisibilitySensor
-										onChange={visibilityFuncA}
-										partialVisibility={true}
-									>
-										<Box px={4} py={2}>
-											<Typography variant="h6" align="center" mb={2}>
-												tech skills
-											</Typography>
+									<Box px={4} py={2}>
+										<Typography variant="h6" align="center" mb={2}>
+											tech skills
+										</Typography>
+										<VisibilitySensor
+											onChange={visibilityFuncA}
+											partialVisibility={true}
+										>
 											<VisibilitySensor
 												onChange={anchorFuncB}
 												partialVisibility={true}
@@ -347,8 +347,8 @@ export default function Skills({ anchorFuncB }) {
 													</Grid>
 												</Grid>
 											</VisibilitySensor>
-										</Box>
-									</VisibilitySensor>
+										</VisibilitySensor>
+									</Box>
 								</Paper>
 							</Grow>
 						</Grid>
@@ -356,14 +356,14 @@ export default function Skills({ anchorFuncB }) {
 						<Grid item xs={9} sm={8} item md={4} m={3} mb={8}>
 							<Grow in={inViewB} timeout={1200}>
 								<Paper>
-									<VisibilitySensor
-										onChange={visibilityFuncB}
-										partialVisibility={true}
-									>
-										<Box px={4} py={2}>
-											<Typography variant="h6" align="center" mb={2}>
-												other skills
-											</Typography>
+									<Box px={4} py={2}>
+										<Typography variant="h6" align="center" mb={2}>
+											other skills
+										</Typography>
+										<VisibilitySensor
+											onChange={visibilityFuncB}
+											partialVisibility={true}
+										>
 											<VisibilitySensor
 												onChange={anchorFuncB}
 												partialVisibility={true}
@@ -511,8 +511,8 @@ export default function Skills({ anchorFuncB }) {
 													</Grid>
 												</Grid>
 											</VisibilitySensor>
-										</Box>
-									</VisibilitySensor>
+										</VisibilitySensor>
+									</Box>
 								</Paper>
 							</Grow>
 						</Grid>
