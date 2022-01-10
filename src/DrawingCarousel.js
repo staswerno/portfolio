@@ -16,6 +16,7 @@ export default function DrawingCarousel({ inViewA }) {
 					duration={1000}
 					interval={3000}
 					indicators={false}
+					navButtonsAlwaysVisible={false}
 				>
 					{/* <Card sx={{ maxWidth: 527 }}> */}
 					<CardMedia

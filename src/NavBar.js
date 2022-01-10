@@ -14,6 +14,7 @@ import {
 	Collapse,
 } from "@mui/material";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Carousel from "react-material-ui-carousel";
 
 const pages = ["about", "skills", "projects", "hobbies", "contact"];
 
