@@ -80,15 +80,14 @@ export default function Skills({ anchorFuncB }) {
 										onChange={visibilityFuncA}
 										partialVisibility={true}
 									>
-										<VisibilitySensor
-											onChange={anchorFuncB}
-											partialVisibility={true}
-										>
-											<Box px={4} py={2}>
-												<Typography variant="h6" align="center" mb={2}>
-													tech skills
-												</Typography>
-
+										<Box px={4} py={2}>
+											<Typography variant="h6" align="center" mb={2}>
+												tech skills
+											</Typography>
+											<VisibilitySensor
+												onChange={anchorFuncB}
+												partialVisibility={true}
+											>
 												<Grid
 													container
 													justifyContent="space-around"
@@ -96,6 +95,7 @@ export default function Skills({ anchorFuncB }) {
 
 													// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
 												>
+													{" "}
 													<Grid item>
 														<Zoom in={inViewA} timeout={1000}>
 															<CardHeader
@@ -217,8 +217,13 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
+														{/* </VisibilitySensor> */}
 													</Grid>
 													<Grid item>
+														{/* <VisibilitySensor
+														onChange={anchorFuncB}
+														partialVisibility={true}
+													> */}
 														<Zoom in={inViewA} timeout={1000}>
 															<CardHeader
 																color="#000000"
@@ -341,8 +346,8 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 													</Grid>
 												</Grid>
-											</Box>
-										</VisibilitySensor>
+											</VisibilitySensor>
+										</Box>
 									</VisibilitySensor>
 								</Paper>
 							</Grow>
@@ -355,20 +360,21 @@ export default function Skills({ anchorFuncB }) {
 										onChange={visibilityFuncB}
 										partialVisibility={true}
 									>
-										<VisibilitySensor
-											onChange={anchorFuncB}
-											partialVisibility={true}
-										>
-											<Box px={4} py={2}>
-												<Typography variant="h6" align="center" mb={2}>
-													other skills
-												</Typography>
+										<Box px={4} py={2}>
+											<Typography variant="h6" align="center" mb={2}>
+												other skills
+											</Typography>
+											<VisibilitySensor
+												onChange={anchorFuncB}
+												partialVisibility={true}
+											>
 												<Grid
 													container
 													justifyContent="space-around"
 													alignItems="center"
 													//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 												>
+													{" "}
 													<Grid item>
 														<Zoom in={inViewB} timeout={1300}>
 															<CardHeader
@@ -504,8 +510,8 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 													</Grid>
 												</Grid>
-											</Box>
-										</VisibilitySensor>
+											</VisibilitySensor>
+										</Box>
 									</VisibilitySensor>
 								</Paper>
 							</Grow>
