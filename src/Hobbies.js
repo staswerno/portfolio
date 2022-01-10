@@ -24,8 +24,6 @@ import MediaCard from "./MediaCard";
 import DrawingCarousel from "./DrawingCarousel";
 import ModalPhoto from "./ModalPhoto";
 
-import AudioPlayer from "material-ui-audio-player";
-
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 
