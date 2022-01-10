@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography, Grow } from "@mui/material";
+import { Grid, Paper, Card, Typography, Grow } from "@mui/material";
 
 import flohmarkt_icon from "./images/photo-flohmarkt-sm-ic.jpg";
 import forest_icon from "./images/photo-forest-sm-ic.jpg";
