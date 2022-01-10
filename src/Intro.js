@@ -80,18 +80,16 @@ export default function Intro({ anchorFuncA }) {
 											i’m a full stack web and app developer.
 											<br />
 										</Typography>
-										<Typography variant="body2" color="text.secondary" mb={2}>
-											Motivated as much by self development as software
-											development, I am an engaged and creative worker, and a
-											curious and fast, but precise, learner. My experience
-											working with development teams and tools in the music
-											industry has nurtured a decisive and organised work ethic.{" "}
+										<Typography variant="body1" color="text.secondary" mb={2}>
+											I am passionate about creativity, especially music, and
+											have invaluable experience working with development teams
+											and tools in the music industry.
 										</Typography>
-										<Typography variant="body2" color="text.secondary" mb={2}>
-											Considerate, patient and reflective in nature, I place
-											great importance on authentic relationships, a principle
-											that has guided my additional experience with team
-											leadership and diversity and inclusion.
+										<Typography variant="body1" color="text.secondary" mb={2}>
+											I am equally motivated by social change, mental health and
+											scientific progress. I also truly believe in the
+											importance of coding for no other reasons than curiosity
+											and joy.
 										</Typography>
 									</Box>
 								</VisibilitySensor>
