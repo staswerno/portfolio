@@ -13,8 +13,10 @@ import {
 	TextField,
 } from "@mui/material";
 import ghostlolly from "./images/project-ghostlolly.png";
+import VisibilitySensor from "react-visibility-sensor";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
-export default function Contact() {
+export default function Contact({ anchorFuncE }) {
 	return (
 		<section id="contact">
 			<Box
@@ -51,72 +53,74 @@ export default function Contact() {
 						mb={{ xs: 6, md: 6 }}
 						//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 					>
-						<Box
-							component="form"
-							width={{ xs: "32ch", sm: "42ch" }}
-							sx={{
-								"& > :not(style)": { m: 2 },
-							}}
-							noValidate
-							autoComplete="off"
-						>
-							<Grid item>
-								{" "}
-								<TextField
-									fullWidth
-									color="secondary"
-									id="name"
-									label="name"
-									variant="outlined"
-									InputLabelProps={{ style: { color: "#BAC3C9" } }}
-								/>
-							</Grid>
-							<Grid item>
-								{" "}
-								<TextField
-									fullWidth
-									id="email"
-									color="secondary"
-									label="email"
-									variant="outlined"
-									InputLabelProps={{ style: { color: "#BAC3C9" } }}
-								/>
-							</Grid>
-							<Grid item>
-								{" "}
-								<TextField
-									fullWidth
-									id="subject"
-									color="secondary"
-									label="subject"
-									variant="outlined"
-									InputLabelProps={{ style: { color: "#BAC3C9" } }}
-								/>
-							</Grid>
-							<Grid item>
-								<TextField
-									fullWidth
-									id="outlined-multiline-static"
-									label="message"
-									color="secondary"
-									multiline
-									rows={8}
-									defaultValue=""
-									InputLabelProps={{ style: { color: "#BAC3C9" } }}
-								/>
-							</Grid>
-							<Button
-								variant="contained"
-								// sx={{
-								// 	":hover": {
-								// 		bgcolor: "primary.dark",
-								// 		color: "white",
-								// 	},
-								// }}
+						<VisibilitySensor onChange={anchorFuncE} partialVisibility={true}>
+							<Box
+								component="form"
+								width={{ xs: "32ch", sm: "42ch" }}
+								sx={{
+									"& > :not(style)": { m: 2 },
+								}}
+								noValidate
+								autoComplete="off"
 							>
-								submit
-							</Button>
-						</Box>
+								<Grid item>
+									{" "}
+									<TextField
+										fullWidth
+										color="secondary"
+										id="name"
+										label="name"
+										variant="outlined"
+										InputLabelProps={{ style: { color: "#BAC3C9" } }}
+									/>
+								</Grid>
+								<Grid item>
+									{" "}
+									<TextField
+										fullWidth
+										id="email"
+										color="secondary"
+										label="email"
+										variant="outlined"
+										InputLabelProps={{ style: { color: "#BAC3C9" } }}
+									/>
+								</Grid>
+								<Grid item>
+									{" "}
+									<TextField
+										fullWidth
+										id="subject"
+										color="secondary"
+										label="subject"
+										variant="outlined"
+										InputLabelProps={{ style: { color: "#BAC3C9" } }}
+									/>
+								</Grid>
+								<Grid item>
+									<TextField
+										fullWidth
+										id="outlined-multiline-static"
+										label="message"
+										color="secondary"
+										multiline
+										rows={8}
+										defaultValue=""
+										InputLabelProps={{ style: { color: "#BAC3C9" } }}
+									/>
+								</Grid>
+								<Button
+									variant="contained"
+									// sx={{
+									// 	":hover": {
+									// 		bgcolor: "primary.dark",
+									// 		color: "white",
+									// 	},
+									// }}
+								>
+									submit
+								</Button>
+							</Box>
+						</VisibilitySensor>
 					</Grid>
 				</Grid>
 			</Box>

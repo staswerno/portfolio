@@ -14,7 +14,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
-export default function Intro() {
+export default function Intro({ anchorFuncA }) {
 	const [inViewA, setInViewA] = useState(false);
 	const [inViewB, setInViewB] = useState(false);
 
@@ -48,15 +48,20 @@ export default function Intro() {
 						<Grow in={inViewA} timeout={900}>
 							<Card sx={{ maxWidth: 527 }}>
 								<VisibilitySensor
-									onChange={visibilityFuncA}
+									onChange={anchorFuncA}
 									partialVisibility={true}
 								>
-									<CardMedia
-										component="img"
-										height="100%"
-										image={portrait}
-										alt="portrait"
-									/>
+									<VisibilitySensor
+										onChange={visibilityFuncA}
+										partialVisibility={true}
+									>
+										<CardMedia
+											component="img"
+											height="100%"
+											image={portrait}
+											alt="portrait"
+										/>
+									</VisibilitySensor>
 								</VisibilitySensor>
 							</Card>
 						</Grow>

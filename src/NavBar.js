@@ -29,6 +29,8 @@ export default function NavBar({ pageAnchorHighlight }) {
 		setAnchorElNav(null);
 	};
 
+	console.log(pageAnchorHighlight);
+
 	return (
 		<AppBar position="fixed">
 			<Container maxWidth="xl">
@@ -140,8 +142,11 @@ export default function NavBar({ pageAnchorHighlight }) {
 												key={page}
 												onClick={handleCloseNavMenu}
 												style={
-													pageAnchorHighlight
-														? { textDecoration: "underline" }
+													pageAnchorHighlight === page
+														? {
+																//
+																backgroundColor: "rgba(32, 32, 32, 0.05)",
+														  }
 														: { textDecoration: "none" }
 												}
 												sx={{

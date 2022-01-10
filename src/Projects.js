@@ -19,7 +19,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
-export default function Projects() {
+export default function Projects({ anchorFuncC }) {
 	const [inViewA, setInViewA] = useState(false);
 	const [inViewB, setInViewB] = useState(false);
 	const [inViewC, setInViewC] = useState(false);
@@ -108,96 +108,101 @@ export default function Projects() {
 									onChange={visibilityFuncA}
 									partialVisibility={true}
 								>
-									<Grow in={inViewA} timeout={900}>
-										<Card
-											onMouseEnter={() => setCardHover(true)}
-											onMouseLeave={() => setCardHover(false)}
-											sx={{
-												maxWidth: 260,
-												height: 340,
-											}}
-										>
-											<Box
+									<VisibilitySensor
+										onChange={anchorFuncC}
+										partialVisibility={true}
+									>
+										<Grow in={inViewA} timeout={900}>
+											<Card
+												onMouseEnter={() => setCardHover(true)}
+												onMouseLeave={() => setCardHover(false)}
 												sx={{
-													overflow: "hidden",
-													backgroundColor: "#121212",
-												}}
-												style={{
-													position: "relative",
+													maxWidth: 260,
+													height: 340,
 												}}
 											>
-												<CardMedia
-													component="img"
-													height="140"
-													image={spaceblog}
-													alt="space blog"
-													style={cardHover ? mouseOnStyle : mouseOffStyle}
-												/>
-												<Box>
-													<Typography
-														variant="body1"
-														width="100%"
-														textAlign="center"
-														style={
-															cardHover ? mouseOnStyleText : mouseOffStyleText
-														}
-													>
-														<br />
-														<br />
-														react | material ui | contentful
-													</Typography>
+												<Box
+													sx={{
+														overflow: "hidden",
+														backgroundColor: "#202020",
+													}}
+													style={{
+														position: "relative",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={spaceblog}
+														alt="space blog"
+														style={cardHover ? mouseOnStyle : mouseOffStyle}
+													/>
+													<Box>
+														<Typography
+															variant="body1"
+															width="100%"
+															textAlign="center"
+															style={
+																cardHover ? mouseOnStyleText : mouseOffStyleText
+															}
+														>
+															<br />
+															<br />
+															react | material ui | contentful
+														</Typography>
+													</Box>
 												</Box>
-											</Box>
 
-											<CardContent>
-												<Typography gutterBottom variant="h5" component="div">
-													space blog
-												</Typography>
+												<CardContent>
+													<Typography gutterBottom variant="h5" component="div">
+														space blog
+													</Typography>
 
-												<Typography variant="body2" color="text.secondary">
-													A space blog with a dark mode, making use of various
-													API's, headless CMS and iFrame
-													<br />
-													<br />
-												</Typography>
-											</CardContent>
+													<Typography variant="body2" color="text.secondary">
+														A space blog with a dark mode, making use of various
+														API's, headless CMS and iFrame
+														<br />
+														<br />
+													</Typography>
+												</CardContent>
 
-											<CardActions>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://staswerno.github.io/space-blog/"
-													target="_blank"
-													alt="space blog page"
-													// sx={{
-													// 	":hover": {
-													// 		bgcolor: "primary.main",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													visit
-												</Button>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://github.com/staswerno/space-blog"
-													target="_blank"
-													alt="space blog repo"
-													// sx={{
-													// 	":hover": {
-													// 		bgcolor: "primary.main",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													code
-												</Button>
-											</CardActions>
-										</Card>
-									</Grow>
+												<CardActions>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://staswerno.github.io/space-blog/"
+														target="_blank"
+														alt="space blog page"
+														// sx={{
+														// 	":hover": {
+														// 		bgcolor: "primary.main",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														visit
+													</Button>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://github.com/staswerno/space-blog"
+														target="_blank"
+														alt="space blog repo"
+														// sx={{
+														// 	":hover": {
+														// 		bgcolor: "primary.main",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														code
+													</Button>
+												</CardActions>
+											</Card>
+										</Grow>
+									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
 							<Grid item m={3} mb={{ xs: 3, md: 3 }}>
@@ -205,92 +210,99 @@ export default function Projects() {
 									onChange={visibilityFuncB}
 									partialVisibility={true}
 								>
-									<Grow in={inViewB} timeout={1200}>
-										<Card
-											onMouseEnter={() => setCardHoverB(true)}
-											onMouseLeave={() => setCardHoverB(false)}
-											sx={{ maxWidth: 250, height: 340 }}
-										>
-											<Box
-												sx={{
-													overflow: "hidden",
-													backgroundColor: "#121212",
-												}}
-												style={{
-													position: "relative",
-												}}
+									<VisibilitySensor
+										onChange={anchorFuncC}
+										partialVisibility={true}
+									>
+										<Grow in={inViewB} timeout={1200}>
+											<Card
+												onMouseEnter={() => setCardHoverB(true)}
+												onMouseLeave={() => setCardHoverB(false)}
+												sx={{ maxWidth: 250, height: 340 }}
 											>
-												<CardMedia
-													component="img"
-													height="140"
-													image={whereami}
-													alt="where am i"
-													style={cardHoverB ? mouseOnStyle : mouseOffStyle}
-												/>
-												<Box>
-													<Typography
-														variant="body1"
-														width="100%"
-														textAlign="center"
-														style={
-															cardHoverB ? mouseOnStyleText : mouseOffStyleText
-														}
-													>
-														<br />
-														<br />
-														react | material ui | leaflet
-													</Typography>
+												<Box
+													sx={{
+														overflow: "hidden",
+														backgroundColor: "#202020",
+													}}
+													style={{
+														position: "relative",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={whereami}
+														alt="where am i"
+														style={cardHoverB ? mouseOnStyle : mouseOffStyle}
+													/>
+													<Box>
+														<Typography
+															variant="body1"
+															width="100%"
+															textAlign="center"
+															style={
+																cardHoverB
+																	? mouseOnStyleText
+																	: mouseOffStyleText
+															}
+														>
+															<br />
+															<br />
+															react | material ui | leaflet
+														</Typography>
+													</Box>
 												</Box>
-											</Box>
 
-											<CardContent>
-												<Typography gutterBottom variant="h5" component="div">
-													whereami
-												</Typography>
-												<Typography variant="body2" color="text.secondary">
-													Track your IP and location with a time stamp using
-													various APIs
-													<br />
-													<br />
-													<br />
-												</Typography>
-											</CardContent>
-											<CardActions>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://staswerno.github.io/whereami/"
-													target="_blank"
-													alt="whereami page"
-													// sx={{
-													// 	":hover": {
-													// 		bgcolor: "primary.main",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													visit
-												</Button>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://github.com/staswerno/whereami"
-													target="_blank"
-													alt="whereami repo"
-													// sx={{
-													// 	":hover": {
-													// 		bgcolor: "primary.main",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													code
-												</Button>
-											</CardActions>
-										</Card>
-									</Grow>
+												<CardContent>
+													<Typography gutterBottom variant="h5" component="div">
+														whereami
+													</Typography>
+													<Typography variant="body2" color="text.secondary">
+														Track your IP and location with a time stamp using
+														various APIs
+														<br />
+														<br />
+														<br />
+													</Typography>
+												</CardContent>
+												<CardActions>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://staswerno.github.io/whereami/"
+														target="_blank"
+														alt="whereami page"
+														// sx={{
+														// 	":hover": {
+														// 		bgcolor: "primary.main",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														visit
+													</Button>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://github.com/staswerno/whereami"
+														target="_blank"
+														alt="whereami repo"
+														// sx={{
+														// 	":hover": {
+														// 		bgcolor: "primary.main",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														code
+													</Button>
+												</CardActions>
+											</Card>
+										</Grow>
+									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
 							<Grid item m={3} mb={{ xs: 3, md: 3 }}>
@@ -298,93 +310,100 @@ export default function Projects() {
 									onChange={visibilityFuncC}
 									partialVisibility={true}
 								>
-									<Grow in={inViewC} timeout={1500}>
-										<Card
-											onMouseEnter={() => setCardHoverC(true)}
-											onMouseLeave={() => setCardHoverC(false)}
-											sx={{
-												maxWidth: 260,
-												height: 340,
-											}}
-										>
-											<Box
+									<VisibilitySensor
+										onChange={anchorFuncC}
+										partialVisibility={true}
+									>
+										<Grow in={inViewC} timeout={1500}>
+											<Card
+												onMouseEnter={() => setCardHoverC(true)}
+												onMouseLeave={() => setCardHoverC(false)}
 												sx={{
-													overflow: "hidden",
-													backgroundColor: "#121212",
-												}}
-												style={{
-													position: "relative",
+													maxWidth: 260,
+													height: 340,
 												}}
 											>
-												<CardMedia
-													component="img"
-													height="140"
-													image={ghostlolly}
-													alt="ghost lolly"
-													style={cardHoverC ? mouseOnStyle : mouseOffStyle}
-												/>
-												<Box>
-													<Typography
-														variant="body1"
-														width="100%"
-														textAlign="center"
-														style={
-															cardHoverC ? mouseOnStyleText : mouseOffStyleText
-														}
-													>
-														<br />
-														<br />
-														react | context
-													</Typography>
+												<Box
+													sx={{
+														overflow: "hidden",
+														backgroundColor: "#202020",
+													}}
+													style={{
+														position: "relative",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={ghostlolly}
+														alt="ghost lolly"
+														style={cardHoverC ? mouseOnStyle : mouseOffStyle}
+													/>
+													<Box>
+														<Typography
+															variant="body1"
+															width="100%"
+															textAlign="center"
+															style={
+																cardHoverC
+																	? mouseOnStyleText
+																	: mouseOffStyleText
+															}
+														>
+															<br />
+															<br />
+															react | context
+														</Typography>
+													</Box>
 												</Box>
-											</Box>
 
-											<CardContent>
-												<Typography gutterBottom variant="h5" component="div">
-													ghost lolly
-												</Typography>
-												<Typography variant="body2" color="text.secondary">
-													A responsive lolly/ghost color/mood picker with a dark
-													mode (both toggle and os/browser detection)
-													<br />
-												</Typography>
-											</CardContent>
-											<CardActions>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://csb-5yf7x.netlify.app/"
-													target="_blank"
-													alt="ghost lolly page"
-													// sx={{
-													// 	":hover": {
-													// 		bgcolor: "primary.main",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													visit
-												</Button>
-												<Button
-													size="small"
-													variant="contained"
-													color="secondary"
-													href="https://github.com/staswerno/ghost-lolly"
-													target="_blank"
-													alt="ghost lolly repo"
-													// sx={{
-													// 	":hover": {
-													// 		// bgcolor: "secondary.dark",
-													// 		color: "text.primary",
-													// 	},
-													// }}
-												>
-													code
-												</Button>
-											</CardActions>
-										</Card>
-									</Grow>
+												<CardContent>
+													<Typography gutterBottom variant="h5" component="div">
+														ghost lolly
+													</Typography>
+													<Typography variant="body2" color="text.secondary">
+														A responsive lolly/ghost color/mood picker with a
+														dark mode (both toggle and os/browser detection)
+														<br />
+													</Typography>
+												</CardContent>
+												<CardActions>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://csb-5yf7x.netlify.app/"
+														target="_blank"
+														alt="ghost lolly page"
+														// sx={{
+														// 	":hover": {
+														// 		bgcolor: "primary.main",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														visit
+													</Button>
+													<Button
+														size="small"
+														variant="contained"
+														color="secondary"
+														href="https://github.com/staswerno/ghost-lolly"
+														target="_blank"
+														alt="ghost lolly repo"
+														// sx={{
+														// 	":hover": {
+														// 		// bgcolor: "secondary.dark",
+														// 		color: "text.primary",
+														// 	},
+														// }}
+													>
+														code
+													</Button>
+												</CardActions>
+											</Card>
+										</Grow>
+									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
 						</Grid>

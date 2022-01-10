@@ -29,7 +29,7 @@ import AudioPlayer from "material-ui-audio-player";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 
-export default function Hobbies() {
+export default function Hobbies({ anchorFuncD }) {
 	const [inViewA, setInViewA] = useState(false);
 	const [inViewB, setInViewB] = useState(false);
 	const [inViewC, setInViewC] = useState(false);
@@ -80,7 +80,12 @@ export default function Hobbies() {
 								onChange={visibilityFuncA}
 								partialVisibility={true}
 							>
-								<DrawingCarousel inViewA={inViewA} />
+								<VisibilitySensor
+									onChange={anchorFuncD}
+									partialVisibility={true}
+								>
+									<DrawingCarousel inViewA={inViewA} />
+								</VisibilitySensor>
 							</VisibilitySensor>
 						</Grid>
 						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
@@ -89,55 +94,70 @@ export default function Hobbies() {
 									onChange={visibilityFuncB}
 									partialVisibility={true}
 								>
-									<Grow in={inViewB} timeout={1200}>
-										<Grid container justifyContent="space-around">
-											<ModalPhoto
-												modalIcon={shan_icon}
-												modalImage={shan_photo}
-											/>
+									<VisibilitySensor
+										onChange={anchorFuncD}
+										partialVisibility={true}
+									>
+										<Grow in={inViewB} timeout={1200}>
+											<Grid container justifyContent="space-around">
+												<ModalPhoto
+													modalIcon={shan_icon}
+													modalImage={shan_photo}
+												/>
 
-											<ModalPhoto
-												modalIcon={thailand_icon}
-												modalImage={thailand_photo}
-											/>
+												<ModalPhoto
+													modalIcon={thailand_icon}
+													modalImage={thailand_photo}
+												/>
 
-											<ModalPhoto
-												modalIcon={joponono_icon}
-												modalImage={joponono_photo}
-											/>
-											{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
-										</Grid>
-									</Grow>
+												<ModalPhoto
+													modalIcon={joponono_icon}
+													modalImage={joponono_photo}
+												/>
+												{/* <ModalPhoto modalIcon={boudhanath_icon} /> */}
+											</Grid>
+										</Grow>
+									</VisibilitySensor>
 								</VisibilitySensor>
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}
 								>
-									<Grow in={inViewB} timeout={1200}>
-										<Grid container justifyContent="space-around">
-											<ModalPhoto
-												modalIcon={nepal_icon}
-												modalImage={nepal_photo}
-											/>
-											<ModalPhoto
-												modalIcon={hajiali_icon}
-												modalImage={hajiali_photo}
-											/>
-											<ModalPhoto
-												modalIcon={flohmarkt_icon}
-												modalImage={flohmarkt_photo}
-											/>
-											{/* <ModalPhoto modalIcon={prayer_icon} /> */}
-										</Grid>
-									</Grow>
+									<VisibilitySensor
+										onChange={anchorFuncD}
+										partialVisibility={true}
+									>
+										<Grow in={inViewB} timeout={1200}>
+											<Grid container justifyContent="space-around">
+												<ModalPhoto
+													modalIcon={nepal_icon}
+													modalImage={nepal_photo}
+												/>
+												<ModalPhoto
+													modalIcon={hajiali_icon}
+													modalImage={hajiali_photo}
+												/>
+												<ModalPhoto
+													modalIcon={flohmarkt_icon}
+													modalImage={flohmarkt_photo}
+												/>
+												{/* <ModalPhoto modalIcon={prayer_icon} /> */}
+											</Grid>
+										</Grow>
+									</VisibilitySensor>
 								</VisibilitySensor>
 								<Grid container justifyContent="center" m={4}>
 									<VisibilitySensor
 										onChange={visibilityFuncC}
 										partialVisibility={true}
 									>
-										{/* <AudioPlayer /> */}
-										<MediaCard inViewC={inViewC} />
+										<VisibilitySensor
+											onChange={anchorFuncD}
+											partialVisibility={true}
+										>
+											{/* <AudioPlayer /> */}
+											<MediaCard inViewC={inViewC} />
+										</VisibilitySensor>
 									</VisibilitySensor>
 								</Grid>
 							</Grid>

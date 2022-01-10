@@ -31,7 +31,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
-export default function Skills() {
+export default function Skills({ anchorFuncB }) {
 	const [inViewA, setInViewA] = useState(false);
 	const [inViewB, setInViewB] = useState(false);
 
@@ -80,264 +80,269 @@ export default function Skills() {
 										onChange={visibilityFuncA}
 										partialVisibility={true}
 									>
-										<Box px={4} py={2}>
-											<Typography variant="h6" align="center" mb={2}>
-												tech skills
-											</Typography>
+										<VisibilitySensor
+											onChange={anchorFuncB}
+											partialVisibility={true}
+										>
+											<Box px={4} py={2}>
+												<Typography variant="h6" align="center" mb={2}>
+													tech skills
+												</Typography>
 
-											<Grid
-												container
-												justifyContent="space-around"
-												alignItems="center"
+												<Grid
+													container
+													justifyContent="space-around"
+													alignItems="center"
 
-												// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
-											>
-												<Grid item>
-													<Zoom in={inViewA} timeout={1000}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="HTML5 Icon"
-																	src={htmlicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	HTML5
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1100}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="CSS3 Icon"
-																	src={cssicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	CSS3
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1200}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="JavaScript Icon"
-																	src={jsicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	JavaScript
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1300}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="React Icon"
-																	src={reacticon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	React
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1400}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="Material-UI Icon"
-																	src={muiicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Material-UI
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1500}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="Bootstrap Icon"
-																	src={bootstrapicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Bootstrap 5
-																</Typography>
-															}
-														/>
-													</Zoom>
+													// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
+												>
+													<Grid item>
+														<Zoom in={inViewA} timeout={1000}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="HTML5 Icon"
+																		src={htmlicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		HTML5
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1100}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="CSS3 Icon"
+																		src={cssicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		CSS3
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1200}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="JavaScript Icon"
+																		src={jsicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		JavaScript
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1300}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="React Icon"
+																		src={reacticon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		React
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1400}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="Material-UI Icon"
+																		src={muiicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Material-UI
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1500}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="Bootstrap Icon"
+																		src={bootstrapicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Bootstrap 5
+																	</Typography>
+																}
+															/>
+														</Zoom>
+													</Grid>
+													<Grid item>
+														<Zoom in={inViewA} timeout={1000}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="Node Icon"
+																		src={nodeicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Node.js
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1100}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="Express Icon"
+																		src={expressicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Express
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1200}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="SQL Icon"
+																		src={sqlicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		SQL/NoSQL
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1300}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="MongoDB Icon"
+																		src={mongoicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		MongoDB
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1400}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="GitHub Icon"
+																		src={githubicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Git/GitHub
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1500}>
+															<CardHeader
+																color="#000000"
+																avatar={
+																	<Avatar
+																		alt="UX Icon"
+																		src={uxicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		UX/UI
+																	</Typography>
+																}
+															/>
+														</Zoom>
+													</Grid>
 												</Grid>
-												<Grid item>
-													<Zoom in={inViewA} timeout={1000}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="Node Icon"
-																	src={nodeicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Node.js
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1100}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="Express Icon"
-																	src={expressicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Express
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1200}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="SQL Icon"
-																	src={sqlicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	SQL/NoSQL
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1300}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="MongoDB Icon"
-																	src={mongoicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	MongoDB
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1400}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="GitHub Icon"
-																	src={githubicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Git/GitHub
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewA} timeout={1500}>
-														<CardHeader
-															color="#000000"
-															avatar={
-																<Avatar
-																	alt="UX Icon"
-																	src={uxicon}
-																	variant="square"
-																/>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	UX/UI
-																</Typography>
-															}
-														/>
-													</Zoom>
-												</Grid>
-											</Grid>
-										</Box>
+											</Box>
+										</VisibilitySensor>
 									</VisibilitySensor>
 								</Paper>
 							</Grow>
@@ -350,150 +355,157 @@ export default function Skills() {
 										onChange={visibilityFuncB}
 										partialVisibility={true}
 									>
-										<Box px={4} py={2}>
-											<Typography variant="h6" align="center" mb={2}>
-												other skills
-											</Typography>
-											<Grid
-												container
-												justifyContent="space-around"
-												alignItems="center"
-												//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
-											>
-												<Grid item>
-													<Zoom in={inViewB} timeout={1300}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<GroupsOutlinedIcon sx={{ fontSize: 36 }} />
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Team Leadership
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewB} timeout={1400}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<MemoryOutlinedIcon sx={{ fontSize: 36 }} />
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Digital Distribution
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewB} timeout={1500}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<MusicNoteOutlinedIcon
-																		sx={{ fontSize: 36 }}
-																	/>
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Music Industry
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewB} timeout={1600}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<GroupAddOutlinedIcon sx={{ fontSize: 36 }} />
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Diversity & Inclusion
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewB} timeout={1700}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<EmojiObjectsOutlinedIcon
-																		sx={{ fontSize: 36 }}
-																	/>
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Creative Thinking
-																</Typography>
-															}
-														/>
-													</Zoom>
-													<Zoom in={inViewB} timeout={1800}>
-														<CardHeader
-															avatar={
-																<Avatar
-																	alt="Team Icon"
-																	variant="rounded"
-																	sx={{ bgcolor: "transparent" }}
-																>
-																	<SmsOutlinedIcon sx={{ fontSize: 36 }} />
-																</Avatar>
-															}
-															title={
-																<Typography
-																	color="text.secondary"
-																	variant="body2"
-																>
-																	Communication
-																</Typography>
-															}
-														/>
-													</Zoom>
+										<VisibilitySensor
+											onChange={anchorFuncB}
+											partialVisibility={true}
+										>
+											<Box px={4} py={2}>
+												<Typography variant="h6" align="center" mb={2}>
+													other skills
+												</Typography>
+												<Grid
+													container
+													justifyContent="space-around"
+													alignItems="center"
+													//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
+												>
+													<Grid item>
+														<Zoom in={inViewB} timeout={1300}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<GroupsOutlinedIcon sx={{ fontSize: 36 }} />
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Team Leadership
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewB} timeout={1400}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<MemoryOutlinedIcon sx={{ fontSize: 36 }} />
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Digital Distribution
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewB} timeout={1500}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<MusicNoteOutlinedIcon
+																			sx={{ fontSize: 36 }}
+																		/>
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Music Industry
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewB} timeout={1600}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<GroupAddOutlinedIcon
+																			sx={{ fontSize: 36 }}
+																		/>
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Diversity & Inclusion
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewB} timeout={1700}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<EmojiObjectsOutlinedIcon
+																			sx={{ fontSize: 36 }}
+																		/>
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Creative Thinking
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewB} timeout={1800}>
+															<CardHeader
+																avatar={
+																	<Avatar
+																		alt="Team Icon"
+																		variant="rounded"
+																		sx={{ bgcolor: "transparent" }}
+																	>
+																		<SmsOutlinedIcon sx={{ fontSize: 36 }} />
+																	</Avatar>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Communication
+																	</Typography>
+																}
+															/>
+														</Zoom>
+													</Grid>
 												</Grid>
-											</Grid>
-										</Box>
+											</Box>
+										</VisibilitySensor>
 									</VisibilitySensor>
 								</Paper>
 							</Grow>

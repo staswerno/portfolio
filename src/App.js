@@ -14,21 +14,39 @@ import { isVisible } from "@testing-library/user-event/dist/utils";
 import { useState } from "react";
 
 function App() {
-	const [pageAnchorHighlight, setPageAnchorHighlight] = useState(false);
-
-	console.log(pageAnchorHighlight);
-
+	const [pageAnchorHighlight, setPageAnchorHighlight] = useState("about");
+	const offset = 0;
 	// change set to true to test visibility
 
 	const anchorFuncA = (isVisible) => {
-		isVisible ? setPageAnchorHighlight(false) : setPageAnchorHighlight(false);
+		if (isVisible) {
+			setPageAnchorHighlight("about");
+		}
 	};
 
-	// const anchorFuncB = (isVisible) => {
-	// 	isVisible
-	// 		? setPageAnchorHighlight("skills")
-	// 		: setPageAnchorHighlight(pageAnchorHighlight);
-	// };
+	const anchorFuncB = (isVisible) => {
+		if (isVisible) {
+			setPageAnchorHighlight("skills");
+		}
+	};
+
+	const anchorFuncC = (isVisible) => {
+		if (isVisible) {
+			setPageAnchorHighlight("projects");
+		}
+	};
+
+	const anchorFuncD = (isVisible) => {
+		if (isVisible) {
+			setPageAnchorHighlight("hobbies");
+		}
+	};
+
+	const anchorFuncE = (isVisible) => {
+		if (isVisible) {
+			setPageAnchorHighlight("contact");
+		}
+	};
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -38,25 +56,51 @@ function App() {
 					<NavBar pageAnchorHighlight={pageAnchorHighlight} />
 				</header>
 				<main>
-					<VisibilitySensor
+					{/* <VisibilitySensor
 						onChange={anchorFuncA}
 						partialVisibility={true}
-						// offset={{ bottom: 10 }}
+						//	offset={{ bottom: -200 }}
 						scrollCheck={true}
-					>
-						<Intro />
-					</VisibilitySensor>
+						resizeCheck={true}
+					> */}
+					<Intro anchorFuncA={anchorFuncA} />
+					{/* </VisibilitySensor> */}
 					{/* <VisibilitySensor
 						onChange={anchorFuncB}
 						partialVisibility={true}
+						// offset={{ top: -50, bottom: -50 }}
 						scrollCheck={true}
-						// offset={{ top: 10 }}
+						resizeCheck={true}
 					> */}
-					<Skills />
+					<Skills anchorFuncB={anchorFuncB} />
 					{/* </VisibilitySensor> */}
-					<Projects />
-					<Hobbies />
-					<Contact />
+					{/* <VisibilitySensor
+						onChange={anchorFuncC}
+						partialVisibility={true}
+						// offset={{ top: -50, bottom: -50 }}
+						scrollCheck={true}
+						resizeCheck={true}
+					> */}
+					<Projects anchorFuncC={anchorFuncC} />
+					{/* </VisibilitySensor>
+					<VisibilitySensor
+						onChange={anchorFuncD}
+						partialVisibility={true}
+						// offset={{ top: -50, bottom: -50 }}
+						scrollCheck={true}
+						resizeCheck={true}
+					> */}
+					<Hobbies anchorFuncD={anchorFuncD} />
+					{/* </VisibilitySensor>
+					<VisibilitySensor
+						onChange={anchorFuncE}
+						partialVisibility={true}
+						// offset={{ top: -50, bottom: -50 }}
+						scrollCheck={true}
+						resizeCheck={true}
+					> */}
+					<Contact anchorFuncE={anchorFuncE} />
+					{/* </VisibilitySensor> */}
 				</main>
 				<footer>
 					<Footer />
