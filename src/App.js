@@ -15,8 +15,6 @@ import { useState } from "react";
 
 function App() {
 	const [pageAnchorHighlight, setPageAnchorHighlight] = useState("about");
-	const offset = 0;
-	// change set to true to test visibility
 
 	const anchorFuncA = (isVisible) => {
 		if (isVisible) {
@@ -56,51 +54,11 @@ function App() {
 					<NavBar pageAnchorHighlight={pageAnchorHighlight} />
 				</header>
 				<main>
-					{/* <VisibilitySensor
-						onChange={anchorFuncA}
-						partialVisibility={true}
-						//	offset={{ bottom: -200 }}
-						scrollCheck={true}
-						resizeCheck={true}
-					> */}
 					<Intro anchorFuncA={anchorFuncA} />
-					{/* </VisibilitySensor> */}
-					{/* <VisibilitySensor
-						onChange={anchorFuncB}
-						partialVisibility={true}
-						// offset={{ top: -50, bottom: -50 }}
-						scrollCheck={true}
-						resizeCheck={true}
-					> */}
 					<Skills anchorFuncB={anchorFuncB} />
-					{/* </VisibilitySensor> */}
-					{/* <VisibilitySensor
-						onChange={anchorFuncC}
-						partialVisibility={true}
-						// offset={{ top: -50, bottom: -50 }}
-						scrollCheck={true}
-						resizeCheck={true}
-					> */}
 					<Projects anchorFuncC={anchorFuncC} />
-					{/* </VisibilitySensor>
-					<VisibilitySensor
-						onChange={anchorFuncD}
-						partialVisibility={true}
-						// offset={{ top: -50, bottom: -50 }}
-						scrollCheck={true}
-						resizeCheck={true}
-					> */}
 					<Hobbies anchorFuncD={anchorFuncD} />
-					{/* </VisibilitySensor>
-					<VisibilitySensor
-						onChange={anchorFuncE}
-						partialVisibility={true}
-						// offset={{ top: -50, bottom: -50 }}
-						scrollCheck={true}
-						resizeCheck={true}
-					> */}
 					<Contact anchorFuncE={anchorFuncE} />
-					{/* </VisibilitySensor> */}
 				</main>
 				<footer>
 					<Footer />
