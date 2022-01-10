@@ -68,7 +68,7 @@ export default function Projects({ anchorFuncC }) {
 	return (
 		<section id="projects">
 			<Box
-				mt={{ xs: 1, sm: 2, md: 6, lg: 6, xl: 3 }}
+				mt={{ xs: 1, sm: 2, md: 9 }}
 				sx={{
 					width: "90%",
 					//	height: "80vh",
@@ -103,7 +103,7 @@ export default function Projects({ anchorFuncC }) {
 							mb={{ xs: 3, md: 6 }}
 							//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 						>
-							<Grid item m={3} mb={{ xs: 3, md: 3 }}>
+							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncA}
 									partialVisibility={true}
@@ -205,7 +205,7 @@ export default function Projects({ anchorFuncC }) {
 									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
-							<Grid item m={3} mb={{ xs: 3, md: 3 }}>
+							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}
@@ -305,7 +305,7 @@ export default function Projects({ anchorFuncC }) {
 									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
-							<Grid item m={3} mb={{ xs: 3, md: 3 }}>
+							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncC}
 									partialVisibility={true}

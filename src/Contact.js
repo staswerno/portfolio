@@ -53,7 +53,7 @@ export default function Contact({ anchorFuncE }) {
 						mb={{ xs: 6, md: 6 }}
 						//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 					>
-						<VisibilitySensor onChange={anchorFuncE} partialVisibility={true}>
+						<VisibilitySensor onChange={anchorFuncE} partialVisibility={false}>
 							<Box
 								component="form"
 								width={{ xs: "32ch", sm: "42ch" }}
