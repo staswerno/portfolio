@@ -49,7 +49,7 @@ export default function NavBar({ pageAnchorHighlight }) {
 								component="div"
 								sx={{ display: { xs: "none", sm: "flex" } }}
 							>
-								Staś Werno
+								staś werno
 							</Typography>
 						</Grid>
 						<Grid item>
@@ -59,7 +59,7 @@ export default function NavBar({ pageAnchorHighlight }) {
 								component="div"
 								sx={{ display: { xs: "flex", sm: "none" } }}
 							>
-								Staś Werno
+								staś werno
 							</Typography>
 						</Grid>
 						<Grid item>
