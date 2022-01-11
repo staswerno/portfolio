@@ -5,18 +5,32 @@ import bell from "./images/bell.png";
 import daisy from "./images/daisy.jpg";
 import octavia from "./images/octavia.png";
 import playing from "./images/playing.png";
-import Carousel from "react-material-ui-carousel";
+// import Carousel from "react-material-ui-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export default function DrawingCarousel({ inViewA }) {
 	return (
 		<Grow in={inViewA} timeout={900}>
-			<Card sx={{ maxWidth: 527 }}>
-				<Carousel
+			<Box>
+				{/* unhide card for material */}
+				{/* <Card sx={{ maxWidth: 527 }}> */}
+				{/* material ui carousel */}
+				{/* <Carousel
 					animation={"slide"}
-					duration={2000}
-					interval={4000}
+					autoPlay={true}
+					duration={1000}
+					interval={3000}
 					indicators={false}
 					navButtonsAlwaysVisible={true}
+				> */}
+				{/* react carousel */}
+				<Carousel
+					autoPlay={true}
+					infiniteLoop={true}
+					showArrows={false}
+					showIndicators={false}
+					showStatus={false}
 				>
 					{/* <Card sx={{ maxWidth: 527 }}> */}
 					<CardMedia
@@ -68,7 +82,8 @@ export default function DrawingCarousel({ inViewA }) {
 					/>
 					{/* </Card> */}
 				</Carousel>
-			</Card>
+				{/* </Card> */}
+			</Box>
 		</Grow>
 	);
 }
