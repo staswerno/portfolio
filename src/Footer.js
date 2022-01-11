@@ -24,11 +24,11 @@ export default function Footer() {
 				<Grid item m={3} mt={{ xs: 6, sm: 3 }}>
 					<Typography variant="h6" align="center">
 						<Link
-							href="mailto:staswerno@gmail.com"
+							href="mailto:hello@staswerno.dev"
 							color="inherit"
 							underline="none"
 						>
-							staswerno@gmail.com
+							hello@staswerno.dev
 						</Link>{" "}
 						| © 2022
 					</Typography>
