@@ -87,8 +87,8 @@ export default function Intro({ anchorFuncA }) {
 										</Typography>
 										<Typography variant="body1" color="text.secondary" mb={2}>
 											Motivated by social change, mental health and scientific
-											progress, I also truly believe in the importance of coding
-											simply for curiosity and joy.
+											progress, I also strongly believe in the importance of
+											coding simply for curiosity and joy.
 										</Typography>
 									</Box>
 								</VisibilitySensor>
