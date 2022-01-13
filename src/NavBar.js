@@ -104,6 +104,14 @@ export default function NavBar({ pageAnchorHighlight }) {
 													<MenuItem
 														key={pageAnchor}
 														onClick={handleCloseNavMenu}
+														style={
+															pageAnchorHighlight === page
+																? {
+																		//
+																		backgroundColor: "rgba(255, 255, 255, 0.1)",
+																  }
+																: { textDecoration: "none" }
+														}
 													>
 														<AnchorLink
 															style={{ textDecoration: "none" }}
@@ -146,7 +154,7 @@ export default function NavBar({ pageAnchorHighlight }) {
 													pageAnchorHighlight === page
 														? {
 																//
-																backgroundColor: "rgba(32, 32, 32, 0.05)",
+																backgroundColor: "rgba(255, 255, 255, 0.1)",
 														  }
 														: { textDecoration: "none" }
 												}
