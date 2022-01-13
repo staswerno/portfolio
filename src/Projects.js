@@ -84,7 +84,7 @@ export default function Projects({ anchorFuncC }) {
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
 					<Grid item m={3} mt={6}>
-						<Paper sx={{ width: 210 }}>
+						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
 								projects
 							</Typography>
@@ -114,6 +114,7 @@ export default function Projects({ anchorFuncC }) {
 									>
 										<Grow in={inViewA} timeout={900}>
 											<Card
+												elevation={4}
 												onMouseEnter={() => setCardHover(true)}
 												onMouseLeave={() => setCardHover(false)}
 												sx={{
@@ -216,6 +217,7 @@ export default function Projects({ anchorFuncC }) {
 									>
 										<Grow in={inViewB} timeout={1200}>
 											<Card
+												elevation={4}
 												onMouseEnter={() => setCardHoverB(true)}
 												onMouseLeave={() => setCardHoverB(false)}
 												sx={{ maxWidth: 250, height: 340 }}
@@ -316,6 +318,7 @@ export default function Projects({ anchorFuncC }) {
 									>
 										<Grow in={inViewC} timeout={1500}>
 											<Card
+												elevation={4}
 												onMouseEnter={() => setCardHoverC(true)}
 												onMouseLeave={() => setCardHoverC(false)}
 												sx={{

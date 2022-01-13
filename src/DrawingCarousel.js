@@ -26,6 +26,8 @@ export default function DrawingCarousel({ inViewA }) {
 		top: "calc(50% - 15px)",
 		backgroundColor: "rgba(192,157,167,1)",
 		cursor: "pointer",
+		boxShadow:
+			"0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
 	};
 	return (
 		<Grow in={inViewA} timeout={900}>
@@ -54,7 +56,7 @@ export default function DrawingCarousel({ inViewA }) {
 								aria-label="back"
 								onClick={onClickHandler}
 								title={label}
-								style={{ ...arrowStyles, left: 3 }}
+								style={{ ...arrowStyles, left: 5 }}
 								size="small"
 							>
 								<ArrowBackIosNewIcon />
@@ -67,7 +69,7 @@ export default function DrawingCarousel({ inViewA }) {
 								aria-label="forward"
 								onClick={onClickHandler}
 								title={label}
-								style={{ ...arrowStyles, right: 3 }}
+								style={{ ...arrowStyles, right: 5 }}
 								size="small"
 								backgroundColor="#000000"
 							>
@@ -77,7 +79,7 @@ export default function DrawingCarousel({ inViewA }) {
 					}
 				>
 					<Box p={3}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"
@@ -88,7 +90,7 @@ export default function DrawingCarousel({ inViewA }) {
 						</Card>
 					</Box>
 					<Box p={2}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"
@@ -98,7 +100,7 @@ export default function DrawingCarousel({ inViewA }) {
 						</Card>
 					</Box>
 					<Box p={3}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"
@@ -108,7 +110,7 @@ export default function DrawingCarousel({ inViewA }) {
 						</Card>
 					</Box>
 					<Box p={3}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"
@@ -118,7 +120,7 @@ export default function DrawingCarousel({ inViewA }) {
 						</Card>
 					</Box>
 					<Box p={3}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"
@@ -128,7 +130,7 @@ export default function DrawingCarousel({ inViewA }) {
 						</Card>
 					</Box>
 					<Box p={3}>
-						<Card sx={{ maxWidth: 527 }}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
 							<CardMedia
 								component="img"
 								height="100%"

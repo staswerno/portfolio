@@ -61,7 +61,7 @@ export default function Hobbies({ anchorFuncD }) {
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
 					<Grid item m={3} mt={6}>
-						<Paper sx={{ width: 210 }}>
+						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
 								hobbies
 							</Typography>

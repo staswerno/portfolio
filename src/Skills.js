@@ -60,7 +60,7 @@ export default function Skills({ anchorFuncB }) {
 					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 				>
 					<Grid item m={3} mt={6}>
-						<Paper sx={{ width: 210 }}>
+						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
 								skills
 							</Typography>
@@ -75,7 +75,7 @@ export default function Skills({ anchorFuncB }) {
 					>
 						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 8 }}>
 							<Grow in={inViewA} timeout={900}>
-								<Paper>
+								<Paper elevation={4}>
 									<Box px={4} py={2}>
 										<Typography variant="h6" align="center" mb={2}>
 											tech skills
@@ -355,7 +355,7 @@ export default function Skills({ anchorFuncB }) {
 
 						<Grid item xs={9} sm={8} item md={4} m={3} mb={8}>
 							<Grow in={inViewB} timeout={1200}>
-								<Paper>
+								<Paper elevation={4}>
 									<Box px={4} py={2}>
 										<Typography variant="h6" align="center" mb={2}>
 											other skills

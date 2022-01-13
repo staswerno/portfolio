@@ -29,7 +29,7 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 	return (
 		<div>
 			<Card
-				onMouseEnter={() => setElevation(6)}
+				onMouseEnter={() => setElevation(4)}
 				onMouseLeave={() => setElevation(2)}
 				elevation={elevation}
 				sx={{
@@ -37,9 +37,9 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 					margin: 2,
 					transition: "all ease-in-out .4s",
 					"&:hover": {
-						transform: "scale(1.12) ",
+						transform: "scale(1.075) ",
 						opacity: 1,
-						// shadows:
+						// boxShadow:
 						// 	"0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12),",
 					},
 				}}

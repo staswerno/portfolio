@@ -16,7 +16,7 @@ export default function MediaCard({ inViewC }) {
 
 	return (
 		<Grow in={inViewC} timeout={1200}>
-			<Card sx={{ display: "flex" }}>
+			<Card sx={{ display: "flex" }} elevation={4}>
 				<Box sx={{ display: "flex", flexDirection: "column" }}>
 					{/* <CardContent sx={{ flex: "1 0 auto" }}>
 					<Typography component="div" variant="h5">

@@ -46,7 +46,7 @@ export default function Intro({ anchorFuncA }) {
 				>
 					<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
 						<Grow in={inViewA} timeout={900}>
-							<Card sx={{ maxWidth: 527 }}>
+							<Card sx={{ maxWidth: 527 }} elevation={4}>
 								<VisibilitySensor
 									onChange={anchorFuncA}
 									partialVisibility={true}
@@ -69,7 +69,7 @@ export default function Intro({ anchorFuncA }) {
 
 					<Grid item xs={9} sm={8} md={5} lg={6} m={4}>
 						<Grow in={inViewB} timeout={1200}>
-							<Paper>
+							<Paper elevation={4}>
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}

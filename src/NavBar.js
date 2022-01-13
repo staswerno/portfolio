@@ -33,7 +33,7 @@ export default function NavBar({ pageAnchorHighlight }) {
 	console.log(pageAnchorHighlight);
 
 	return (
-		<AppBar position="fixed">
+		<AppBar position="fixed" elevation={6}>
 			<Container maxWidth="xl">
 				<Toolbar disableGutters enableColorOnDark>
 					<Grid

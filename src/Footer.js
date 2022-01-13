@@ -13,6 +13,7 @@ export default function Footer() {
 				backgroundColor: "primary.main",
 				mx: "auto",
 			}}
+			elevation={6}
 		>
 			<Grid
 				container
