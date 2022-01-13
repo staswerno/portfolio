@@ -1,20 +1,6 @@
-import {
-	Button,
-	Paper,
-	Grid,
-	Box,
-	Typography,
-	Fade,
-	Card,
-	CardActionArea,
-	CardMedia,
-	CardContent,
-	CardActions,
-	TextField,
-} from "@mui/material";
-import ghostlolly from "./images/project-ghostlolly.png";
+import { Button, Paper, Grid, Box, Typography, TextField } from "@mui/material";
+
 import VisibilitySensor from "react-visibility-sensor";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function Contact({ anchorFuncE }) {
 	return (

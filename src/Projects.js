@@ -7,9 +7,7 @@ import {
 	Button,
 	Card,
 	CardMedia,
-	CardActionArea,
 	Typography,
-	Fade,
 	Grow,
 } from "@mui/material";
 import spaceblog from "./images/project-spaceblog.png";
@@ -17,7 +15,6 @@ import whereami from "./images/project-whereami.png";
 import ghostlolly from "./images/project-ghostlolly.png";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function Projects({ anchorFuncC }) {
 	const [inViewA, setInViewA] = useState(false);
