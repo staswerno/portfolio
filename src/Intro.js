@@ -81,14 +81,14 @@ export default function Intro({ anchorFuncA }) {
 											<br />
 										</Typography>
 										<Typography variant="body1" color="text.secondary" mb={2}>
-											I am inspired by creativity and passionate about music,
-											with invaluable experience working with development teams
-											and tools in the music industry.
+											Creatively minded and passionate about music, I have
+											invaluable experience working with development teams and
+											tools in the music industry.
 										</Typography>
 										<Typography variant="body1" color="text.secondary" mb={2}>
-											Motivated by social change, mental health and scientific
-											progress, I also truly believe in the importance of coding
-											simply for curiosity and joy.
+											I am motivated by social change, mental health and
+											scientific progress, but I also truly believe in the
+											importance of coding simply for curiosity and joy.
 										</Typography>
 									</Box>
 								</VisibilitySensor>

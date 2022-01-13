@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -20,20 +21,26 @@ const style = {
 };
 
 export default function ModalPhoto({ modalIcon, modalImage }) {
-	const [open, setOpen] = React.useState(false);
+	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+	const [elevation, setElevation] = useState(2);
 
 	return (
 		<div>
 			<Card
+				onMouseEnter={() => setElevation(6)}
+				onMouseLeave={() => setElevation(2)}
+				elevation={elevation}
 				sx={{
 					maxWidth: 80,
 					margin: 2,
 					transition: "all ease-in-out .4s",
 					"&:hover": {
-						transform: "scale(1.15) ",
+						transform: "scale(1.12) ",
 						opacity: 1,
+						// shadows:
+						// 	"0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12),",
 					},
 				}}
 			>
