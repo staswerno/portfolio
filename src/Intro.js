@@ -81,9 +81,9 @@ export default function Intro({ anchorFuncA }) {
 											<br />
 										</Typography>
 										<Typography variant="body1" color="text.secondary" mb={2}>
-											I am passionate about creativity and guided by music, with
-											invaluable experience working with development teams and
-											tools in the music industry.
+											I am inspired by creativity and passionate about music,
+											with invaluable experience working with development teams
+											and tools in the music industry.
 										</Typography>
 										<Typography variant="body1" color="text.secondary" mb={2}>
 											Motivated by social change, mental health and scientific
