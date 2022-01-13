@@ -171,32 +171,34 @@ export default function Projects({ anchorFuncC }) {
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
-														href="https://staswerno.github.io/space-blog/"
+														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
-														alt="space blog page"
-														// sx={{
-														// 	":hover": {
-														// 		bgcolor: "primary.main",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														alt="ghost lolly repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														visit
 													</Button>
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/space-blog"
+														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
-														alt="space blog repo"
-														// sx={{
-														// 	":hover": {
-														// 		bgcolor: "primary.main",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														alt="ghost lolly repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														code
 													</Button>
@@ -272,32 +274,34 @@ export default function Projects({ anchorFuncC }) {
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
-														href="https://staswerno.github.io/whereami/"
+														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
-														alt="whereami page"
-														// sx={{
-														// 	":hover": {
-														// 		bgcolor: "primary.main",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														alt="ghost lolly repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														visit
 													</Button>
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/whereami"
+														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
-														alt="whereami repo"
-														// sx={{
-														// 	":hover": {
-														// 		bgcolor: "primary.main",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														alt="ghost lolly repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														code
 													</Button>
@@ -374,32 +378,34 @@ export default function Projects({ anchorFuncC }) {
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
-														href="https://csb-5yf7x.netlify.app/"
+														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
-														alt="ghost lolly page"
-														// sx={{
-														// 	":hover": {
-														// 		bgcolor: "primary.main",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														alt="ghost lolly repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														visit
 													</Button>
 													<Button
 														size="small"
 														variant="contained"
+														disableElevation
 														color="secondary"
 														href="https://github.com/staswerno/ghost-lolly"
 														target="_blank"
 														alt="ghost lolly repo"
-														// sx={{
-														// 	":hover": {
-														// 		// bgcolor: "secondary.dark",
-														// 		color: "text.primary",
-														// 	},
-														// }}
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+																// color: "text.primary",
+															},
+														}}
 													>
 														code
 													</Button>

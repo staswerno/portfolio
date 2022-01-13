@@ -110,13 +110,16 @@ export default function Contact({ anchorFuncE }) {
 								</Grid>
 								<Button
 									variant="contained"
-									elevation={4}
-									// sx={{
-									// 	":hover": {
-									// 		bgcolor: "primary.dark",
-									// 		color: "white",
-									// 	},
-									// }}
+									disableElevation
+									color="secondary"
+									target="_blank"
+									alt="ghost lolly repo"
+									sx={{
+										":hover": {
+											bgcolor: "secondary.main",
+											// color: "text.primary",
+										},
+									}}
 								>
 									submit
 								</Button>
