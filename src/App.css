@@ -5,18 +5,16 @@
 	display: none;
 }
 
-.portrait-bg {
+/* .portrait-bg {
 	background: url("images/portrait.png");
 	background-size: cover;
-}
+} */
 
-input[type="range"] {
-	height: 5px;
-	-webkit-appearance: none;
-	width: 100%;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background: #3b7677;
-	transition: background 0.2s ease;
-	cursor: pointer;
+@keyframes colorChange {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
 }
