@@ -20,7 +20,7 @@ import prayer_photo from "./images/photo-prayer-sm.jpg";
 import boudhanath_photo from "./images/photo-boudhanath-sm.jpg";
 import thailand_photo from "./images/photo-thailand-sm.jpg";
 
-import MediaCard from "./MediaCard";
+import AudioPlayer from "./AudioPlayer";
 import DrawingCarousel from "./DrawingCarousel";
 import ModalPhoto from "./ModalPhoto";
 
@@ -87,7 +87,7 @@ export default function Hobbies({ anchorFuncD }) {
 							</VisibilitySensor>
 						</Grid>
 						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
-							<Grid container>
+							<Grid container justifyContent="space-around" alignItems="center">
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}
@@ -154,7 +154,7 @@ export default function Hobbies({ anchorFuncD }) {
 											partialVisibility={true}
 										>
 											{/* <AudioPlayer /> */}
-											<MediaCard inViewC={inViewC} />
+											<AudioPlayer inViewC={inViewC} />
 										</VisibilitySensor>
 									</VisibilitySensor>
 								</Grid>

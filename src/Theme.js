@@ -21,6 +21,11 @@ let theme = createTheme({
 						light: "#ecf6fc",
 						dark: "#8a9398",
 					},
+					error: {
+						main: "#ffffff",
+						light: "#ffffff",
+						dark: "#ffffff",
+					},
 					background: {
 						default: "#202020",
 						paper: "#c09da7",
@@ -42,43 +47,43 @@ let theme = createTheme({
 	},
 	typography: {
 		h1: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		h2: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		h3: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		h4: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		h5: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		h6: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		subtitle1: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		subtitle2: {
-			fontFamily: "Space Mono",
+			fontFamily: ["Space Mono", "monospace"].join(","),
 		},
 		body1: {
-			fontFamily: "Roboto",
+			fontFamily: ["Roboto", "sans-serif"].join(","),
 		},
 		body2: {
-			fontFamily: "Roboto",
+			fontFamily: ["Roboto", "sans-serif"].join(","),
 		},
 		button: {
-			fontFamily: "Roboto",
+			fontFamily: ["Roboto", "sans-serif"].join(","),
 		},
 		caption: {
-			fontFamily: "Roboto",
+			fontFamily: ["Roboto", "sans-serif"].join(","),
 		},
 		overline: {
-			fontFamily: "Roboto",
+			fontFamily: ["Roboto", "sans-serif"].join(","),
 		},
 	},
 });
