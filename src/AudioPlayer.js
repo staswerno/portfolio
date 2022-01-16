@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { Grow, Slider, Avatar } from "@mui/material";
+import { Grow, Slider, Avatar, styled, Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import { Paper } from "@mui/material";
@@ -54,6 +54,19 @@ export default function AudioPlayer({ inViewC }) {
 	const trackStyling = `
     -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #777))
   `;
+
+	const CoverImage = styled("div")({
+		width: 80,
+		height: 80,
+		objectFit: "cover",
+		overflow: "hidden",
+		flexShrink: 0,
+		borderRadius: 8,
+		backgroundColor: "rgba(0,0,0,0.08)",
+		"& > img": {
+			width: "100%",
+		},
+	});
 
 	const toPrevTrack = () => {
 		if (trackIndex - 1 < 0) {
@@ -143,7 +156,7 @@ export default function AudioPlayer({ inViewC }) {
 					sx={
 						isPlaying
 							? {
-									display: { xs: "none", sm: "flex" },
+									display: { xs: "flex", sm: "flex" },
 									backgroundColor: "var(--active-color)",
 									animation: "colorChange 20s alternate infinite",
 							  }
@@ -154,46 +167,60 @@ export default function AudioPlayer({ inViewC }) {
 					}
 					elevation={4}
 				>
-					<CardMedia
+					{/* <CardMedia
 						component="img"
 						sx={{
 							width: 160,
 						}}
 						image={image}
 						alt={`track artwork for ${title} by ${artist}`}
-					/>
-					{/* <Avatar alt={`track artwork for ${title} by ${artist}`} src={image} /> */}
-					<Box
-						sx={{
-							display: "flex",
-							flexDirection: "column",
-							justifyContent: "center",
-							minWidth: "175px",
-						}}
+					/> */}
+					<Stack
+						direction="row"
+						spacing={0}
+						alignItems="center"
+						justifyContent="space-around"
 					>
-						<CardContent sx={{ flex: "1 0 auto", width: "210px" }}>
-							<Typography component="div" variant="h6" textAlign="center">
-								{title}
-							</Typography>
-						</CardContent>
-						<AudioControls
-							isPlaying={isPlaying}
-							onPrevClick={toPrevTrack}
-							onNextClick={toNextTrack}
-							onPlayPauseClick={setIsPlaying}
-						/>
+						<Box pl={2}>
+							<CoverImage>
+								<img
+									alt={`track artwork for ${title} by ${artist}`}
+									src={image}
+								/>
+							</CoverImage>
+						</Box>
+						{/* <Avatar alt={`track artwork for ${title} by ${artist}`} src={image} /> */}
 						<Box
 							sx={{
 								display: "flex",
-								alignItems: "center",
+								flexDirection: "column",
 								justifyContent: "center",
-								pl: 1,
-								pb: 1,
-								width: "80%",
-								mx: "auto",
+								minWidth: "175px",
 							}}
 						>
-							{/* <input
+							{/* <CardContent sx={{ flex: "1 0 auto", width: "210px" }}>
+							<Typography component="div" variant="h6" textAlign="center">
+								{title}
+							</Typography>
+						</CardContent> */}
+							<AudioControls
+								isPlaying={isPlaying}
+								onPrevClick={toPrevTrack}
+								onNextClick={toNextTrack}
+								onPlayPauseClick={setIsPlaying}
+							/>
+							<Box
+								sx={{
+									display: "flex",
+									alignItems: "center",
+									justifyContent: "center",
+									pl: 1,
+									pb: 1,
+									width: "80%",
+									mx: "auto",
+								}}
+							>
+								{/* <input
 							type="range"
 							value={trackProgress}
 							step="1"
@@ -206,42 +233,42 @@ export default function AudioPlayer({ inViewC }) {
 							style={{ background: trackStyling }}
 						/> */}
 
-							<Slider
-								color="error"
-								aria-label="time-indicator"
-								size="small"
-								value={trackProgress}
-								min={0}
-								step={1}
-								max={duration}
-								onChange={(e) => onScrub(e.target.value)}
-								onMouseUp={onScrubEnd}
-								onKeyUp={onScrubEnd}
-								sx={{
-									color: "#fff",
-									height: 4,
-									"& .MuiSlider-thumb": {
-										width: 8,
-										height: 8,
-										transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
-										"&:before": {
-											boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
+								<Slider
+									color="error"
+									aria-label="time-indicator"
+									size="small"
+									value={trackProgress}
+									min={0}
+									step={1}
+									max={duration}
+									onChange={(e) => onScrub(e.target.value)}
+									onMouseUp={onScrubEnd}
+									onKeyUp={onScrubEnd}
+									sx={{
+										color: "#fff",
+										height: 4,
+										"& .MuiSlider-thumb": {
+											width: 8,
+											height: 8,
+											transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
+											"&:before": {
+												boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
+											},
+											"&:hover, &.Mui-focusVisible": {
+												boxShadow: `0px 0px 0px 8px ${"rgb(255 255 255 / 16%)"}`,
+											},
+											"&.Mui-active": {
+												width: 20,
+												height: 20,
+											},
 										},
-										"&:hover, &.Mui-focusVisible": {
-											boxShadow: `0px 0px 0px 8px ${"rgb(255 255 255 / 16%)"}`,
+										"& .MuiSlider-rail": {
+											opacity: 0.28,
 										},
-										"&.Mui-active": {
-											width: 20,
-											height: 20,
-										},
-									},
-									"& .MuiSlider-rail": {
-										opacity: 0.28,
-									},
-								}}
-							/>
-						</Box>
-						{/* <Box
+									}}
+								/>
+							</Box>
+							{/* <Box
 						sx={{
 							display: "flex",
 							justifyContent: "center",
@@ -253,13 +280,17 @@ export default function AudioPlayer({ inViewC }) {
 					>
 						<Slider color="error" width="50%" />
 					</Box> */}
-					</Box>
+						</Box>
+					</Stack>
 				</Card>
+
+				{/* player for xs viewport */}
+
 				<Card
 					sx={
 						isPlaying
 							? {
-									display: { xs: "block", sm: "none" },
+									display: { xs: "none", sm: "none" },
 									backgroundColor: "var(--active-color)",
 									animation: "colorChange 20s alternate infinite",
 							  }

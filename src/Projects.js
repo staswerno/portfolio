@@ -308,7 +308,7 @@ export default function Projects({ anchorFuncC }) {
 									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
-							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
+							<Grid item m={3} mb={{ xs: 5, md: 10 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncC}
 									partialVisibility={true}

@@ -67,7 +67,7 @@ export default function Intro({ anchorFuncA }) {
 						</Grow>
 					</Grid>
 
-					<Grid item xs={9} sm={8} md={5} lg={6} m={4}>
+					<Grid item xs={9} sm={8} md={5} lg={6} m={4} mb={{ xs: 3, sm: 4 }}>
 						<Grow in={inViewB} timeout={1200}>
 							<Paper elevation={4}>
 								<VisibilitySensor

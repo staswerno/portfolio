@@ -15,7 +15,11 @@ const AudioControls = ({
 	// const theme = useTheme();
 
 	return (
-		<Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }} m="auto">
+		<Box
+			sx={{ display: "flex", alignItems: "center", pl: 1, pb: 0 }}
+			mx="auto"
+			mt={1}
+		>
 			<IconButton aria-label="previous" onClick={onPrevClick}>
 				<SkipPreviousOutlinedIcon />
 			</IconButton>

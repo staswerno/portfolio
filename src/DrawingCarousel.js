@@ -31,7 +31,7 @@ export default function DrawingCarousel({ inViewA }) {
 	};
 	return (
 		<Grow in={inViewA} timeout={900}>
-			<div>
+			<Box>
 				{/* unhide card for material */}
 				{/* <Card sx={{ maxWidth: 527 }}> */}
 				{/* material ui carousel */}
@@ -141,7 +141,7 @@ export default function DrawingCarousel({ inViewA }) {
 					</Box>
 				</Carousel>
 				{/* </Card> */}
-			</div>
+			</Box>
 		</Grow>
 	);
 }

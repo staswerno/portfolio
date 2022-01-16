@@ -73,7 +73,7 @@ export default function Hobbies({ anchorFuncD }) {
 						alignItems="center"
 						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 					>
-						<Grid item xs={9} sm={8} md={5} xl={4} m={2} mb={{ xs: 3, md: 4 }}>
+						<Grid item xs={9} sm={8} md={5} xl={4} mb={-2}>
 							<VisibilitySensor
 								onChange={visibilityFuncA}
 								partialVisibility={true}
@@ -86,8 +86,14 @@ export default function Hobbies({ anchorFuncD }) {
 								</VisibilitySensor>
 							</VisibilitySensor>
 						</Grid>
-						<Grid item xs={9} sm={8} md={5} mb={{ xs: 3, md: 7 }}>
-							<Grid container justifyContent="space-around" alignItems="center">
+						<Grid item xs={9} sm={8} md={5}>
+							<Grid
+								container
+								// direction="column"
+								justifyContent="space-around"
+								alignItems="center"
+								mb={6}
+							>
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}
@@ -97,7 +103,13 @@ export default function Hobbies({ anchorFuncD }) {
 										partialVisibility={true}
 									>
 										<Grow in={inViewB} timeout={1200}>
-											<Grid container justifyContent="space-around">
+											<Grid
+												container
+												justifyContent="space-around"
+												m={3}
+												mt={{ xs: 0, md: 3 }}
+												mb={{ xs: 0, sm: 3 }}
+											>
 												<ModalPhoto
 													modalIcon={shan_icon}
 													modalImage={shan_photo}
@@ -126,7 +138,12 @@ export default function Hobbies({ anchorFuncD }) {
 										partialVisibility={true}
 									>
 										<Grow in={inViewB} timeout={1200}>
-											<Grid container justifyContent="space-around">
+											<Grid
+												container
+												justifyContent="space-around"
+												m={3}
+												mt={{ xs: 0, sm: 3 }}
+											>
 												<ModalPhoto
 													modalIcon={nepal_icon}
 													modalImage={nepal_photo}
@@ -144,7 +161,13 @@ export default function Hobbies({ anchorFuncD }) {
 										</Grow>
 									</VisibilitySensor>
 								</VisibilitySensor>
-								<Grid container justifyContent="center" m={4}>
+								<Grid
+									container
+									justifyContent="center"
+									m={3}
+									mb={{ xs: 1, md: 3 }}
+									// mt={{ xs: 6, md: 3 }}
+								>
 									<VisibilitySensor
 										onChange={visibilityFuncC}
 										partialVisibility={true}
