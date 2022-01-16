@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { Grow, Slider } from "@mui/material";
+import { Grow, Slider, Avatar } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import { Paper } from "@mui/material";
@@ -162,7 +162,7 @@ export default function AudioPlayer({ inViewC }) {
 						image={image}
 						alt={`track artwork for ${title} by ${artist}`}
 					/>
-
+					{/* <Avatar alt={`track artwork for ${title} by ${artist}`} src={image} /> */}
 					<Box
 						sx={{
 							display: "flex",

@@ -33,7 +33,7 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 				onMouseLeave={() => setElevation(2)}
 				elevation={elevation}
 				sx={{
-					maxWidth: 80,
+					maxWidth: { sm: 70, lg: 80 },
 					margin: 2,
 					transition: "all ease-in-out .4s",
 					"&:hover": {

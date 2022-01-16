@@ -73,7 +73,7 @@ export default function Hobbies({ anchorFuncD }) {
 						alignItems="center"
 						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
 					>
-						<Grid item xs={9} sm={8} md={4} m={3} mb={{ xs: 3, md: 7 }}>
+						<Grid item xs={9} sm={8} md={5} xl={4} m={2} mb={{ xs: 3, md: 4 }}>
 							<VisibilitySensor
 								onChange={visibilityFuncA}
 								partialVisibility={true}
@@ -86,7 +86,7 @@ export default function Hobbies({ anchorFuncD }) {
 								</VisibilitySensor>
 							</VisibilitySensor>
 						</Grid>
-						<Grid item xs={9} sm={8} md={6} mb={{ xs: 3, md: 7 }}>
+						<Grid item xs={9} sm={8} md={5} mb={{ xs: 3, md: 7 }}>
 							<Grid container justifyContent="space-around" alignItems="center">
 								<VisibilitySensor
 									onChange={visibilityFuncB}
