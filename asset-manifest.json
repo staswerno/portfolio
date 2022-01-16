@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c8b0dbb2.css",
-    "main.js": "/portfolio/static/js/main.6d03bbec.js",
+    "main.css": "/portfolio/static/css/main.6cd868e0.css",
+    "main.js": "/portfolio/static/js/main.891def8e.js",
+    "static/media/StasWernoEyAlterLoTrim.mp3": "/portfolio/static/media/StasWernoEyAlterLoTrim.c9a5a2d3ae751d5aee84.mp3",
+    "static/media/StasWernoS2LichtenbergLoTrim.mp3": "/portfolio/static/media/StasWernoS2LichtenbergLoTrim.772f0e466ff727f2105b.mp3",
+    "static/media/albumart.png": "/portfolio/static/media/albumart.a7a542af5543241dcbe7.png",
     "static/media/photo-nepal-sm.jpg": "/portfolio/static/media/photo-nepal-sm.1739f3d04f534929387f.jpg",
     "static/media/photo-hajiali-sm.jpg": "/portfolio/static/media/photo-hajiali-sm.1e596b0b9c1a7de22a8f.jpg",
     "static/media/photo-shan-sm.jpg": "/portfolio/static/media/photo-shan-sm.bcf720a07872cdafe0d7.jpg",
@@ -29,11 +32,11 @@
     "static/media/photo-prayer-sm-ic.jpg": "/portfolio/static/media/photo-prayer-sm-ic.de5c5e4181755511b123.jpg",
     "static/media/photo-hajiali-sm-ic.jpg": "/portfolio/static/media/photo-hajiali-sm-ic.5dcfc8061c8fe6bef7e0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.c8b0dbb2.css.map": "/portfolio/static/css/main.c8b0dbb2.css.map",
-    "main.6d03bbec.js.map": "/portfolio/static/js/main.6d03bbec.js.map"
+    "main.6cd868e0.css.map": "/portfolio/static/css/main.6cd868e0.css.map",
+    "main.891def8e.js.map": "/portfolio/static/js/main.891def8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8b0dbb2.css",
-    "static/js/main.6d03bbec.js"
+    "static/css/main.6cd868e0.css",
+    "static/js/main.891def8e.js"
   ]
 }
