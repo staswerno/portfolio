@@ -14,28 +14,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import ContactForm from "./ContactForm";
 
 export default function Contact({ anchorFuncE }) {
-	const [state, handleSubmit] = useForm("xqknebky");
-	if (state.succeeded) {
-		return (
-			<>
-				{" "}
-				<Grid item xs={9} sm={8} md={5} lg={6} m={4} mb={{ xs: 3, sm: 4 }}>
-					<Grow in={true} timeout={1200}>
-						<Paper elevation={4}>
-							<Box p={4}>
-								<Typography variant="h6" mb={2}>
-									thank you for your message! <br />
-									i’m a full stack web and app developer.
-									<br />
-								</Typography>
-							</Box>
-						</Paper>
-					</Grow>
-				</Grid>
-			</>
-		);
-	}
-
 	return (
 		<section id="contact">
 			<Box

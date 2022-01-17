@@ -42,7 +42,7 @@ export default function ContactForm() {
 			textAlign="right"
 			alignItems="center"
 			direction="column"
-			mb={{ xs: 6, md: 6 }}
+			mb={{ xs: 3 }}
 			//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 		>
 			{/* <form onSubmit={handleSubmit}> */}
