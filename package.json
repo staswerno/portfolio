@@ -1,6 +1,6 @@
 {
 	"name": "portfolio",
-	"homepage": "https://staswerno.github.io/portfolio/",
+	"homepage": "https://staswerno.github.io/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
