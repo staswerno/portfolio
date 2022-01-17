@@ -24,7 +24,7 @@ export default function ContactForm() {
 							elevation={4}
 						>
 							<Box p={4}>
-								<Typography variant="subtitle1" color="text.secondary">
+								<Typography variant="body1" color="text.secondary">
 									thank you for your message
 								</Typography>
 							</Box>
