@@ -1,8 +1,41 @@
-import { Button, Paper, Grid, Box, Typography, TextField } from "@mui/material";
-
+import {
+	Button,
+	Paper,
+	Grid,
+	Box,
+	Typography,
+	TextField,
+	Modal,
+	Grow,
+	Backdrop,
+} from "@mui/material";
+import { useForm, ValidationError } from "@formspree/react";
 import VisibilitySensor from "react-visibility-sensor";
+import ContactForm from "./ContactForm";
 
 export default function Contact({ anchorFuncE }) {
+	const [state, handleSubmit] = useForm("xqknebky");
+	if (state.succeeded) {
+		return (
+			<>
+				{" "}
+				<Grid item xs={9} sm={8} md={5} lg={6} m={4} mb={{ xs: 3, sm: 4 }}>
+					<Grow in={true} timeout={1200}>
+						<Paper elevation={4}>
+							<Box p={4}>
+								<Typography variant="h6" mb={2}>
+									thank you for your message! <br />
+									i’m a full stack web and app developer.
+									<br />
+								</Typography>
+							</Box>
+						</Paper>
+					</Grow>
+				</Grid>
+			</>
+		);
+	}
+
 	return (
 		<section id="contact">
 			<Box
@@ -40,7 +73,7 @@ export default function Contact({ anchorFuncE }) {
 						//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 					>
 						<VisibilitySensor onChange={anchorFuncE} partialVisibility={false}>
-							<Box
+							{/* <Box
 								component="form"
 								width={{ xs: "32ch", sm: "42ch" }}
 								sx={{
@@ -48,8 +81,10 @@ export default function Contact({ anchorFuncE }) {
 								}}
 								noValidate
 								autoComplete="off"
-							>
-								<Grid item>
+								onSubmit={handleSubmit}
+							> */}
+							{/* <form onSubmit={handleSubmit}> */}
+							{/* <Grid item>
 									{" "}
 									<TextField
 										fullWidth
@@ -59,19 +94,26 @@ export default function Contact({ anchorFuncE }) {
 										variant="outlined"
 										InputLabelProps={{ style: { color: "#BAC3C9" } }}
 									/>
-								</Grid>
-								<Grid item>
+								</Grid> */}
+							{/* <Grid item>
 									{" "}
 									<TextField
 										fullWidth
 										id="email"
 										color="secondary"
+										name="email"
+										type="email"
 										label="email"
 										variant="outlined"
 										InputLabelProps={{ style: { color: "#BAC3C9" } }}
 									/>
+									<ValidationError
+										prefix="Email"
+										field="email"
+										errors={state.errors}
+									/>
 								</Grid>
-								<Grid item>
+								{/* <Grid item>
 									{" "}
 									<TextField
 										fullWidth
@@ -81,11 +123,12 @@ export default function Contact({ anchorFuncE }) {
 										variant="outlined"
 										InputLabelProps={{ style: { color: "#BAC3C9" } }}
 									/>
-								</Grid>
-								<Grid item>
+								</Grid> */}
+							{/* <Grid item>
 									<TextField
 										fullWidth
-										id="outlined-multiline-static"
+										id="message"
+										name="message"
 										label="message"
 										color="secondary"
 										multiline
@@ -93,13 +136,20 @@ export default function Contact({ anchorFuncE }) {
 										defaultValue=""
 										InputLabelProps={{ style: { color: "#BAC3C9" } }}
 									/>
+									<ValidationError
+										prefix="Message"
+										field="message"
+										errors={state.errors}
+									/>
 								</Grid>
 								<Button
 									variant="contained"
+									type="submit"
+									disabled={state.submitting}
 									disableElevation
 									color="secondary"
 									target="_blank"
-									alt="ghost lolly repo"
+									alt="form submit"
 									sx={{
 										":hover": {
 											bgcolor: "secondary.main",
@@ -108,8 +158,11 @@ export default function Contact({ anchorFuncE }) {
 									}}
 								>
 									submit
-								</Button>
-							</Box>
+								</Button>{" "} */}
+
+							<ContactForm />
+							{/* </form> */}
+							{/* </Box> */}
 						</VisibilitySensor>
 					</Grid>
 				</Grid>

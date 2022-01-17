@@ -165,14 +165,6 @@ export default function AudioPlayer({ inViewC }) {
 					}
 					elevation={4}
 				>
-					{/* <CardMedia
-						component="img"
-						sx={{
-							width: 160,
-						}}
-						image={image}
-						alt={`track artwork for ${title} by ${artist}`}
-					/> */}
 					<Stack
 						direction="row"
 						spacing={0}
@@ -187,7 +179,6 @@ export default function AudioPlayer({ inViewC }) {
 								/>
 							</CoverImage>
 						</Box>
-						{/* <Avatar alt={`track artwork for ${title} by ${artist}`} src={image} /> */}
 						<Box
 							sx={{
 								display: "flex",
@@ -196,11 +187,6 @@ export default function AudioPlayer({ inViewC }) {
 								minWidth: "175px",
 							}}
 						>
-							{/* <CardContent sx={{ flex: "1 0 auto", width: "210px" }}>
-							<Typography component="div" variant="h6" textAlign="center">
-								{title}
-							</Typography>
-						</CardContent> */}
 							<AudioControls
 								isPlaying={isPlaying}
 								onPrevClick={toPrevTrack}
