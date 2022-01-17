@@ -156,12 +156,10 @@ export default function AudioPlayer({ inViewC }) {
 					sx={
 						isPlaying
 							? {
-									display: { xs: "flex", sm: "flex" },
 									backgroundColor: "var(--active-color)",
 									animation: "colorChange 20s alternate infinite",
 							  }
 							: {
-									display: { xs: "none", sm: "flex" },
 									backgroundColor: "#c09da7",
 							  }
 					}
@@ -220,19 +218,6 @@ export default function AudioPlayer({ inViewC }) {
 									mx: "auto",
 								}}
 							>
-								{/* <input
-							type="range"
-							value={trackProgress}
-							step="1"
-							min="0"
-							max={duration ? duration : `${duration}`}
-							className="progress"
-							onChange={(e) => onScrub(e.target.value)}
-							onMouseUp={onScrubEnd}
-							onKeyUp={onScrubEnd}
-							style={{ background: trackStyling }}
-						/> */}
-
 								<Slider
 									color="error"
 									aria-label="time-indicator"
@@ -286,7 +271,7 @@ export default function AudioPlayer({ inViewC }) {
 
 				{/* player for xs viewport */}
 
-				<Card
+				{/* <Card
 					sx={
 						isPlaying
 							? {
@@ -340,8 +325,8 @@ export default function AudioPlayer({ inViewC }) {
 								width: "80%",
 								mx: "auto",
 							}}
-						>
-							{/* <input
+						> */}
+				{/* <input
 							type="range"
 							value={trackProgress}
 							step="1"
@@ -354,7 +339,7 @@ export default function AudioPlayer({ inViewC }) {
 							style={{ background: trackStyling }}
 						/> */}
 
-							<Slider
+				{/* <Slider
 								color="error"
 								aria-label="time-indicator"
 								size="small"
@@ -388,8 +373,8 @@ export default function AudioPlayer({ inViewC }) {
 									},
 								}}
 							/>
-						</Box>
-						{/* <Box
+						</Box> */}
+				{/* <Box
 						sx={{
 							display: "flex",
 							justifyContent: "center",
@@ -401,8 +386,8 @@ export default function AudioPlayer({ inViewC }) {
 					>
 						<Slider color="error" width="50%" />
 					</Box> */}
-					</Box>
-				</Card>
+				{/* </Box> */}
+				{/* </Card> */}
 			</Box>
 		</Grow>
 	);
