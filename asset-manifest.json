@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6cd868e0.css",
-    "main.js": "/static/js/main.7d5dcd4c.js",
+    "main.js": "/static/js/main.87dbb1f1.js",
     "static/media/StasWernoEyAlterLoTrim.mp3": "/static/media/StasWernoEyAlterLoTrim.c9a5a2d3ae751d5aee84.mp3",
     "static/media/StasWernoS2LichtenbergLoTrim.mp3": "/static/media/StasWernoS2LichtenbergLoTrim.772f0e466ff727f2105b.mp3",
     "static/media/albumart.png": "/static/media/albumart.a7a542af5543241dcbe7.png",
@@ -33,10 +33,10 @@
     "static/media/photo-hajiali-sm-ic.jpg": "/static/media/photo-hajiali-sm-ic.5dcfc8061c8fe6bef7e0.jpg",
     "index.html": "/index.html",
     "main.6cd868e0.css.map": "/static/css/main.6cd868e0.css.map",
-    "main.7d5dcd4c.js.map": "/static/js/main.7d5dcd4c.js.map"
+    "main.87dbb1f1.js.map": "/static/js/main.87dbb1f1.js.map"
   },
   "entrypoints": [
     "static/css/main.6cd868e0.css",
-    "static/js/main.7d5dcd4c.js"
+    "static/js/main.87dbb1f1.js"
   ]
 }
