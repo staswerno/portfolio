@@ -1,20 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.6cd868e0.css",
-    "main.js": "/static/js/main.fe9ad7e0.js",
+    "main.js": "/static/js/main.76919c1c.js",
     "static/media/StasWernoEyAlterLoTrim.mp3": "/static/media/StasWernoEyAlterLoTrim.c9a5a2d3ae751d5aee84.mp3",
     "static/media/StasWernoS2LichtenbergLoTrim.mp3": "/static/media/StasWernoS2LichtenbergLoTrim.772f0e466ff727f2105b.mp3",
-    "static/media/albumart.png": "/static/media/albumart.a7a542af5543241dcbe7.png",
     "static/media/photo-nepal-sm.jpg": "/static/media/photo-nepal-sm.1739f3d04f534929387f.jpg",
     "static/media/photo-hajiali-sm.jpg": "/static/media/photo-hajiali-sm.1e596b0b9c1a7de22a8f.jpg",
     "static/media/photo-shan-sm.jpg": "/static/media/photo-shan-sm.bcf720a07872cdafe0d7.jpg",
-    "static/media/photo-prayer-sm.jpg": "/static/media/photo-prayer-sm.bcaa5f0386922b8d68ec.jpg",
-    "static/media/photo-boudhanath-sm.jpg": "/static/media/photo-boudhanath-sm.60c95f59f4a85d34126a.jpg",
     "static/media/photo-flohmarkt-sm.jpg": "/static/media/photo-flohmarkt-sm.e465143e5a15f6736902.jpg",
     "static/media/photo-thailand-sm.jpg": "/static/media/photo-thailand-sm.842ff297ca2be789018b.jpg",
     "static/media/playing.png": "/static/media/playing.b363ad0f2f60683e8083.png",
     "static/media/jono.png": "/static/media/jono.b60bdfb6566ccbd5b56e.png",
-    "static/media/photo-forest-sm.jpg": "/static/media/photo-forest-sm.d77b2359ab7838cc3fcd.jpg",
     "static/media/photo-joponono-sm.jpg": "/static/media/photo-joponono-sm.c39b0df5aeb7f0815c3b.jpg",
     "static/media/portrait.png": "/static/media/portrait.5d8c16234490f1ec45be.png",
     "static/media/project-whereami.png": "/static/media/project-whereami.c2fbf9c5c33d6ac93418.png",
@@ -23,20 +19,18 @@
     "static/media/bell.png": "/static/media/bell.e4bb95bab6bc449d9a5d.png",
     "static/media/space.png": "/static/media/space.06c5d8c0b4af67970be2.png",
     "static/media/project-spaceblog.png": "/static/media/project-spaceblog.4221c54bea6662890547.png",
-    "static/media/icon-express-dummy.png": "/static/media/icon-express-dummy.1758089a918dc53473c6.png",
+    "static/media/albumart.png": "/static/media/albumart.867667ea21e14ce6bfbc.png",
     "static/media/project-ghostlolly.png": "/static/media/project-ghostlolly.b2e569eb32a5a26ec9cd.png",
     "static/media/photo-nepal-sm-ic.jpg": "/static/media/photo-nepal-sm-ic.5388103a4289af8e91a1.jpg",
     "static/media/photo-thailand-sm-ic.jpg": "/static/media/photo-thailand-sm-ic.a23fb6d878caa9607608.jpg",
-    "static/media/photo-boudhanath-sm-ic.jpg": "/static/media/photo-boudhanath-sm-ic.9d8e1c34f6ec514257d6.jpg",
     "static/media/photo-shan-sm-ic.jpg": "/static/media/photo-shan-sm-ic.55fbb8ae6653ed953b60.jpg",
-    "static/media/photo-prayer-sm-ic.jpg": "/static/media/photo-prayer-sm-ic.de5c5e4181755511b123.jpg",
     "static/media/photo-hajiali-sm-ic.jpg": "/static/media/photo-hajiali-sm-ic.5dcfc8061c8fe6bef7e0.jpg",
     "index.html": "/index.html",
     "main.6cd868e0.css.map": "/static/css/main.6cd868e0.css.map",
-    "main.fe9ad7e0.js.map": "/static/js/main.fe9ad7e0.js.map"
+    "main.76919c1c.js.map": "/static/js/main.76919c1c.js.map"
   },
   "entrypoints": [
     "static/css/main.6cd868e0.css",
-    "static/js/main.fe9ad7e0.js"
+    "static/js/main.76919c1c.js"
   ]
 }
