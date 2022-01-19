@@ -17,12 +17,7 @@ export default function ContactForm() {
 				{" "}
 				<Grid item xs={9} sm={8} md={5} lg={6} m={4} mb={{ xs: 3, sm: 4 }}>
 					<Grow in={true} timeout={1200}>
-						<Paper
-							// sx={{
-							// 	backgroundColor: "#bac3c9",
-							// }}
-							elevation={4}
-						>
+						<Paper elevation={4}>
 							<Box p={4}>
 								<Typography variant="body1" color="text.secondary">
 									thank you for your message
@@ -43,9 +38,7 @@ export default function ContactForm() {
 			alignItems="center"
 			direction="column"
 			mb={{ xs: 3 }}
-			//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 		>
-			{/* <form onSubmit={handleSubmit}> */}
 			<Box
 				component="form"
 				width={{ xs: "32ch", sm: "42ch" }}
@@ -56,18 +49,6 @@ export default function ContactForm() {
 				autoComplete="off"
 				onSubmit={handleSubmit}
 			>
-				{/* <form onSubmit={handleSubmit}> */}
-				{/* <Grid item>
-									{" "}
-									<TextField
-										fullWidth
-										color="secondary"
-										id="name"
-										label="name"
-										variant="outlined"
-										InputLabelProps={{ style: { color: "#BAC3C9" } }}
-									/>
-								</Grid> */}
 				<Grid item>
 					{" "}
 					<TextField
@@ -123,15 +104,12 @@ export default function ContactForm() {
 					sx={{
 						":hover": {
 							bgcolor: "secondary.main",
-							// color: "text.primary",
 						},
 					}}
 				>
 					submit
 				</Button>
-				{/* </form> */}
 			</Box>
-			{/* </form> */}
 		</Grid>
 	);
 }

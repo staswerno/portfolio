@@ -1,5 +1,5 @@
 import "./App.css";
-import { CssBaseline, ThemeProvider, Typography } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./Theme";
 import NavBar from "./NavBar";
 import Intro from "./Intro";

@@ -1,16 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-
-import { Grow, Slider, Avatar, styled, Stack } from "@mui/material";
+import { Grow, Slider, styled, Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import { Paper } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
 import albumart from "./images/albumart.png";
 import S2Lichtenberg from "./sounds/StasWernoS2LichtenbergLoTrim.mp3";
 import EyAlter from "./sounds/StasWernoEyAlterLoTrim.mp3";
@@ -239,141 +230,9 @@ export default function AudioPlayer({ inViewC }) {
 									}}
 								/>
 							</Box>
-							{/* <Box
-						sx={{
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-							pl: 1,
-							pb: 1,
-							width: "80%",
-						}}
-					>
-						<Slider color="error" width="50%" />
-					</Box> */}
 						</Box>
 					</Stack>
 				</Card>
-
-				{/* player for xs viewport */}
-
-				{/* <Card
-					sx={
-						isPlaying
-							? {
-									display: { xs: "none", sm: "none" },
-									backgroundColor: "var(--active-color)",
-									animation: "colorChange 20s alternate infinite",
-							  }
-							: {
-									display: { xs: "block", sm: "none" },
-									backgroundColor: "#c09da7",
-							  }
-					}
-					elevation={4}
-				>
-					<CardMedia
-						component="img"
-						sx={{
-							// maxWidth: 230,
-							height: 150,
-						}}
-						image={image}
-						alt={`track artwork for ${title} by ${artist}`}
-					/>
-
-					<Box
-						sx={{
-							display: "flex",
-							flexDirection: "column",
-							justifyContent: "center",
-							minWidth: "175px",
-						}}
-					>
-						<CardContent sx={{ flex: "1 0 auto", width: "210px" }}>
-							<Typography component="div" variant="h6" textAlign="center">
-								{title}
-							</Typography>
-						</CardContent>
-						<AudioControls
-							isPlaying={isPlaying}
-							onPrevClick={toPrevTrack}
-							onNextClick={toNextTrack}
-							onPlayPauseClick={setIsPlaying}
-						/>
-						<Box
-							sx={{
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								pl: 1,
-								pb: 1,
-								width: "80%",
-								mx: "auto",
-							}}
-						> */}
-				{/* <input
-							type="range"
-							value={trackProgress}
-							step="1"
-							min="0"
-							max={duration ? duration : `${duration}`}
-							className="progress"
-							onChange={(e) => onScrub(e.target.value)}
-							onMouseUp={onScrubEnd}
-							onKeyUp={onScrubEnd}
-							style={{ background: trackStyling }}
-						/> */}
-
-				{/* <Slider
-								color="error"
-								aria-label="time-indicator"
-								size="small"
-								value={trackProgress}
-								min={0}
-								step={1}
-								max={duration}
-								onChange={(e) => onScrub(e.target.value)}
-								onMouseUp={onScrubEnd}
-								onKeyUp={onScrubEnd}
-								sx={{
-									color: "#fff",
-									height: 4,
-									"& .MuiSlider-thumb": {
-										width: 8,
-										height: 8,
-										transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
-										"&:before": {
-											boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
-										},
-										"&:hover, &.Mui-focusVisible": {
-											boxShadow: `0px 0px 0px 8px ${"rgb(255 255 255 / 16%)"}`,
-										},
-										"&.Mui-active": {
-											width: 20,
-											height: 20,
-										},
-									},
-									"& .MuiSlider-rail": {
-										opacity: 0.28,
-									},
-								}}
-							/>
-						</Box> */}
-				{/* <Box
-						sx={{
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-							pl: 1,
-							pb: 1,
-							width: "80%",
-						}}
-					>
-						<Slider color="error" width="50%" />
-					</Box> */}
-				{/* </Box> */}
-				{/* </Card> */}
 			</Box>
 		</Grow>
 	);

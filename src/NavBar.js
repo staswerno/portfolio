@@ -14,13 +14,11 @@ import {
 	Collapse,
 } from "@mui/material";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Carousel from "react-material-ui-carousel";
 
 const pages = ["about", "skills", "projects", "hobbies", "contact"];
 
 export default function NavBar({ pageAnchorHighlight }) {
 	const [anchorElNav, setAnchorElNav] = useState(null);
-	// const [pageAnchorHighlight, setPageAnchorHighlight] = useState(true);
 
 	const handleOpenNavMenu = (event) => {
 		setAnchorElNav(event.currentTarget);

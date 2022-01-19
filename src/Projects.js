@@ -28,7 +28,7 @@ export default function Projects({ anchorFuncC }) {
 	const mouseOnStyle = {
 		transition: "all ease-in-out .4s",
 		filter: "blur(4px)",
-		// transform: "scale(1.15) ",
+
 		opacity: 0.3,
 	};
 	const mouseOffStyleText = {
@@ -68,18 +68,13 @@ export default function Projects({ anchorFuncC }) {
 				mt={{ xs: 1, sm: 2, md: 9 }}
 				sx={{
 					width: "90%",
-					//	height: "80vh",
+
 					display: "flex",
 					backgroundColor: "transparent",
 					mx: "auto",
 				}}
 			>
-				<Grid
-					container
-					justifyContent="space-around"
-					alignItems="center"
-					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
-				>
+				<Grid container justifyContent="space-around" alignItems="center">
 					<Grid item m={3} mt={6}>
 						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
@@ -87,18 +82,12 @@ export default function Projects({ anchorFuncC }) {
 							</Typography>
 						</Paper>
 					</Grid>
-					<Grid
-						container
-						justifyContent="space-around"
-						alignItems="center"
-						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
-					>
+					<Grid container justifyContent="space-around" alignItems="center">
 						<Grid
 							container
 							justifyContent="space-around"
 							alignItems="center"
 							mb={{ xs: 3, md: 6 }}
-							//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 						>
 							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
 								<VisibilitySensor
@@ -170,13 +159,12 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://staswerno.github.io/space-blog/"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="space blog site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>
@@ -187,13 +175,12 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://github.com/staswerno/space-blog"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="space blog repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>
@@ -273,13 +260,12 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://staswerno.github.io/whereami/"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="whereami site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>
@@ -290,13 +276,12 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://github.com/staswerno/whereami"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="whereami repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>
@@ -377,13 +362,12 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://csb-5yf7x.netlify.app/"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="ghost lolly site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>
@@ -400,7 +384,6 @@ export default function Projects({ anchorFuncC }) {
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
-																// color: "text.primary",
 															},
 														}}
 													>

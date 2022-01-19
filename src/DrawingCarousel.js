@@ -1,19 +1,10 @@
-import {
-	Card,
-	CardMedia,
-	Fade,
-	Grow,
-	Box,
-	Paper,
-	IconButton,
-} from "@mui/material";
+import { Card, CardMedia, Grow, Box, IconButton } from "@mui/material";
 import space from "./images/space.png";
 import jono from "./images/jono.png";
 import bell from "./images/bell.png";
 import daisy from "./images/daisy.jpg";
 import octavia from "./images/octavia.png";
 import playing from "./images/playing.png";
-// import Carousel from "react-material-ui-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -32,18 +23,6 @@ export default function DrawingCarousel({ inViewA }) {
 	return (
 		<Grow in={inViewA} timeout={900}>
 			<Box>
-				{/* unhide card for material */}
-				{/* <Card sx={{ maxWidth: 527 }}> */}
-				{/* material ui carousel */}
-				{/* <Carousel
-					animation={"slide"}
-					autoPlay={true}
-					duration={1000}
-					interval={3000}
-					indicators={false}
-					navButtonsAlwaysVisible={true}
-				> */}
-				{/* react carousel */}
 				<Carousel
 					autoPlay={true}
 					infiniteLoop={true}
@@ -84,8 +63,7 @@ export default function DrawingCarousel({ inViewA }) {
 								component="img"
 								height="100%"
 								image={playing}
-								alt="space drawing"
-								// sx={{ maxWidth: 527 }}
+								alt="siblings playing drawing"
 							/>
 						</Card>
 					</Box>
@@ -95,7 +73,7 @@ export default function DrawingCarousel({ inViewA }) {
 								component="img"
 								height="100%"
 								image={octavia}
-								alt="space drawing"
+								alt="octavia butler drawing"
 							/>
 						</Card>
 					</Box>
@@ -115,7 +93,7 @@ export default function DrawingCarousel({ inViewA }) {
 								component="img"
 								height="100%"
 								image={bell}
-								alt="space drawing"
+								alt="bell hooks drawing"
 							/>
 						</Card>
 					</Box>
@@ -125,7 +103,7 @@ export default function DrawingCarousel({ inViewA }) {
 								component="img"
 								height="100%"
 								image={jono}
-								alt="space drawing"
+								alt="team read the room drawing"
 							/>
 						</Card>
 					</Box>
@@ -135,12 +113,11 @@ export default function DrawingCarousel({ inViewA }) {
 								component="img"
 								height="100%"
 								image={daisy}
-								alt="space drawing"
+								alt="daisy drawing"
 							/>
 						</Card>
 					</Box>
 				</Carousel>
-				{/* </Card> */}
 			</Box>
 		</Grow>
 	);

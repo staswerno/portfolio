@@ -4,7 +4,6 @@ import SkipNextOutlinedIcon from "@mui/icons-material/SkipNextOutlined";
 import SkipPreviousOutlinedIcon from "@mui/icons-material/SkipPreviousOutlined";
 import StopOutlinedIcon from "@mui/icons-material/StopOutlined";
 import { Box } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 const AudioControls = ({
 	isPlaying,
@@ -12,8 +11,6 @@ const AudioControls = ({
 	onPrevClick,
 	onNextClick,
 }) => {
-	// const theme = useTheme();
-
 	return (
 		<Box
 			sx={{ display: "flex", alignItems: "center", pl: 1, pb: 0 }}

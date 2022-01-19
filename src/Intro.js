@@ -5,9 +5,7 @@ import {
 	Card,
 	CardMedia,
 	Typography,
-	Fade,
 	Grow,
-	Zoom,
 } from "@mui/material";
 import portrait from "./images/portrait.png";
 import VisibilitySensor from "react-visibility-sensor";
@@ -31,7 +29,7 @@ export default function Intro({ anchorFuncA }) {
 				mt={{ xs: 10, sm: 12, md: 20, lg: 20, xl: 24 }}
 				sx={{
 					width: "90%",
-					//	height: "100%",
+
 					display: "flex",
 					backgroundColor: "primary",
 					mx: "auto",
@@ -41,7 +39,6 @@ export default function Intro({ anchorFuncA }) {
 					container
 					justifyContent="space-around"
 					alignItems="center"
-					//	rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
 					mb={{ xs: 6, md: 12, lg: 16, xl: 18 }}
 				>
 					<Grid item xs={9} sm={8} md={5} lg={4} xl={3} m={4}>
@@ -59,7 +56,7 @@ export default function Intro({ anchorFuncA }) {
 											component="img"
 											height="100%"
 											image={portrait}
-											alt="portrait"
+											alt="portrait drawing"
 										/>
 									</VisibilitySensor>
 								</VisibilitySensor>

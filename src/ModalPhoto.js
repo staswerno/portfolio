@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { Card, CardMedia, CardActionArea } from "@mui/material";
-import Typography from "@mui/material/Typography";
 
 const style = {
 	position: "absolute",
@@ -39,8 +38,6 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 					"&:hover": {
 						transform: "scale(1.075) ",
 						opacity: 1,
-						// boxShadow:
-						// 	"0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12),",
 					},
 				}}
 			>
@@ -49,15 +46,8 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 						component="img"
 						height="100%"
 						image={modalIcon}
-						alt="photo thumbnail"
+						alt={modalIcon}
 						onClick={handleOpen}
-						// sx={{
-						// transition: "all ease-in-out .4s",
-						// "&:hover": {
-						// 	transform: "scale(1.15) ",
-						// 	opacity: 0.3,
-						// },
-						// }}
 					/>
 				</CardActionArea>
 			</Card>
@@ -78,7 +68,7 @@ export default function ModalPhoto({ modalIcon, modalImage }) {
 							component="img"
 							height="100%"
 							image={modalImage}
-							alt="photo"
+							alt={modalImage}
 						/>
 					</Box>
 				</Fade>

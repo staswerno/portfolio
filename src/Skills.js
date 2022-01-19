@@ -5,28 +5,29 @@ import {
 	CardHeader,
 	Avatar,
 	Typography,
-	Fade,
 	Grow,
 	Zoom,
 } from "@mui/material";
-import muiicon from "./images/icon-mui-dummy.png";
-import htmlicon from "./images/icon-html-dummy.png";
-import cssicon from "./images/icon-css-dummy.png";
-import bootstrapicon from "./images/icon-bootstrap-dummy.png";
-import expressicon from "./images/icon-express-dummy.png";
-import githubicon from "./images/icon-github-dummy.png";
-import jsicon from "./images/icon-js-dummy.png";
-import mongoicon from "./images/icon-mongo-dummy.png";
-import nodeicon from "./images/icon-node-dummy.png";
-import reacticon from "./images/icon-react-dummy.png";
-import sqlicon from "./images/icon-sql-dummy.png";
-import uxicon from "./images/icon-ux-dummy.png";
-import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
-import MemoryOutlinedIcon from "@mui/icons-material/MemoryOutlined";
-import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
-import GroupAddOutlinedIcon from "@mui/icons-material/GroupAddOutlined";
-import EmojiObjectsOutlinedIcon from "@mui/icons-material/EmojiObjectsOutlined";
-import SmsOutlinedIcon from "@mui/icons-material/SmsOutlined";
+import muiicon from "./images/icon-mui.png";
+import htmlicon from "./images/icon-html.png";
+import cssicon from "./images/icon-css.png";
+import bootstrapicon from "./images/icon-bootstrap.png";
+import expressicon from "./images/icon-express.png";
+import giticon from "./images/icon-git.png";
+import jsicon from "./images/icon-js.png";
+import mongoicon from "./images/icon-mongo.png";
+import nodeicon from "./images/icon-node.png";
+import reacticon from "./images/icon-react.png";
+import sqlicon from "./images/icon-sql.png";
+import uxicon from "./images/icon-ux.png";
+
+import teamicon from "./images/icon-team.png";
+import digitalicon from "./images/icon-digital.png";
+import musicicon from "./images/icon-music.png";
+import diversityicon from "./images/icon-diversity.png";
+import bulbicon from "./images/icon-bulb.png";
+import commicon from "./images/icon-comm.png";
+
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import { isVisible } from "@testing-library/user-event/dist/utils";
@@ -47,18 +48,13 @@ export default function Skills({ anchorFuncB }) {
 				mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
 				sx={{
 					width: "90%",
-					//	height: "80vh",
+
 					display: "flex",
 					backgroundColor: "#bac3c9",
 					mx: "auto",
 				}}
 			>
-				<Grid
-					container
-					justifyContent="space-around"
-					alignItems="center"
-					//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
-				>
+				<Grid container justifyContent="space-around" alignItems="center">
 					<Grid item m={3} mt={6}>
 						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
@@ -67,12 +63,7 @@ export default function Skills({ anchorFuncB }) {
 						</Paper>
 					</Grid>
 
-					<Grid
-						container
-						justifyContent="space-around"
-						alignItems="center"
-						//	rowSpacing={{ xs: 3, sm: 4, md: 4, lg: 0 }}
-					>
+					<Grid container justifyContent="space-around" alignItems="center">
 						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 8 }}>
 							<Grow in={inViewA} timeout={900}>
 								<Paper elevation={4}>
@@ -92,8 +83,6 @@ export default function Skills({ anchorFuncB }) {
 													container
 													justifyContent="space-around"
 													alignItems="center"
-
-													// rowSpacing={{ xs: 0, sm: 4, md: 6, lg: 0 }}
 												>
 													{" "}
 													<Grid item>
@@ -217,13 +206,8 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														{/* </VisibilitySensor> */}
 													</Grid>
 													<Grid item>
-														{/* <VisibilitySensor
-														onChange={anchorFuncB}
-														partialVisibility={true}
-													> */}
 														<Zoom in={inViewA} timeout={1000}>
 															<CardHeader
 																color="#000000"
@@ -269,7 +253,7 @@ export default function Skills({ anchorFuncB }) {
 																color="#000000"
 																avatar={
 																	<Avatar
-																		alt="SQL Icon"
+																		alt="PostgreSQL Icon"
 																		src={sqlicon}
 																		variant="square"
 																	/>
@@ -279,7 +263,7 @@ export default function Skills({ anchorFuncB }) {
 																		color="text.secondary"
 																		variant="body2"
 																	>
-																		SQL/NoSQL
+																		PostgreSQL
 																	</Typography>
 																}
 															/>
@@ -309,8 +293,8 @@ export default function Skills({ anchorFuncB }) {
 																color="#000000"
 																avatar={
 																	<Avatar
-																		alt="GitHub Icon"
-																		src={githubicon}
+																		alt="Git Icon"
+																		src={giticon}
 																		variant="square"
 																	/>
 																}
@@ -372,7 +356,6 @@ export default function Skills({ anchorFuncB }) {
 													container
 													justifyContent="space-around"
 													alignItems="center"
-													//	rowSpacing={{ xs: 3, sm: 4, md: 6, lg: 0 }}
 												>
 													{" "}
 													<Grid item>
@@ -381,11 +364,9 @@ export default function Skills({ anchorFuncB }) {
 																avatar={
 																	<Avatar
 																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<GroupsOutlinedIcon sx={{ fontSize: 36 }} />
-																	</Avatar>
+																		src={teamicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography
@@ -401,12 +382,10 @@ export default function Skills({ anchorFuncB }) {
 															<CardHeader
 																avatar={
 																	<Avatar
-																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<MemoryOutlinedIcon sx={{ fontSize: 36 }} />
-																	</Avatar>
+																		alt="Digital Icon"
+																		src={digitalicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography
@@ -422,14 +401,10 @@ export default function Skills({ anchorFuncB }) {
 															<CardHeader
 																avatar={
 																	<Avatar
-																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<MusicNoteOutlinedIcon
-																			sx={{ fontSize: 36 }}
-																		/>
-																	</Avatar>
+																		alt="Music Icon"
+																		src={musicicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography
@@ -445,14 +420,10 @@ export default function Skills({ anchorFuncB }) {
 															<CardHeader
 																avatar={
 																	<Avatar
-																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<GroupAddOutlinedIcon
-																			sx={{ fontSize: 36 }}
-																		/>
-																	</Avatar>
+																		alt="Diversity Icon"
+																		src={diversityicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography
@@ -468,14 +439,10 @@ export default function Skills({ anchorFuncB }) {
 															<CardHeader
 																avatar={
 																	<Avatar
-																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<EmojiObjectsOutlinedIcon
-																			sx={{ fontSize: 36 }}
-																		/>
-																	</Avatar>
+																		alt="Bulb Icon"
+																		src={bulbicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography
@@ -491,12 +458,10 @@ export default function Skills({ anchorFuncB }) {
 															<CardHeader
 																avatar={
 																	<Avatar
-																		alt="Team Icon"
-																		variant="rounded"
-																		sx={{ bgcolor: "transparent" }}
-																	>
-																		<SmsOutlinedIcon sx={{ fontSize: 36 }} />
-																	</Avatar>
+																		alt="Communication Icon"
+																		src={commicon}
+																		variant="square"
+																	/>
 																}
 																title={
 																	<Typography

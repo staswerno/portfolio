@@ -35,12 +35,6 @@ let theme = createTheme({
 						secondary: "#000000",
 					},
 					action: {
-						// focus: "rgba(255, 0, 132, 0.98)",
-						// active: "rgba(255, 0, 132, 0.98)",
-						// hover: "rgba(255, 0, 132, 0.98)",
-						// selected: "rgba(255, 0, 132, 0.98)",
-						// disabled: "rgba(255, 0, 132, 0.98)",
-						// disabledBackground: "rgba(255, 0, 132, 0.98)",
 						hoverOpacity: 0,
 					},
 			  }),
