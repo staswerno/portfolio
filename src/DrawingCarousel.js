@@ -24,7 +24,7 @@ export default function DrawingCarousel({ inViewA }) {
 		<Grow in={inViewA} timeout={900}>
 			<Box>
 				<Carousel
-					autoPlay={true}
+					autoPlay={false}
 					infiniteLoop={true}
 					showArrows={true}
 					showIndicators={false}
