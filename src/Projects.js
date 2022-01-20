@@ -11,7 +11,7 @@ import {
 	Grow,
 } from "@mui/material";
 import spaceblog from "./images/project-spaceblog.png";
-import whereami from "./images/project-whereami.png";
+import spacecrew from "./images/project-spacecrew.png";
 import ghostlolly from "./images/project-ghostlolly.png";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
@@ -146,7 +146,7 @@ export default function Projects({ anchorFuncC }) {
 													</Typography>
 
 													<Typography variant="body2" color="text.secondary">
-														A space blog with a dark mode, making use of various
+														A Space Blog with a dark mode, making use of various
 														API's, headless CMS and iFrame
 														<br />
 														<br />
@@ -220,7 +220,7 @@ export default function Projects({ anchorFuncC }) {
 													<CardMedia
 														component="img"
 														height="140"
-														image={whereami}
+														image={spacecrew}
 														alt="where am i"
 														style={cardHoverB ? mouseOnStyle : mouseOffStyle}
 													/>
@@ -237,19 +237,18 @@ export default function Projects({ anchorFuncC }) {
 														>
 															<br />
 															<br />
-															react | material ui | leaflet
+															mern stack
 														</Typography>
 													</Box>
 												</Box>
 
 												<CardContent>
 													<Typography gutterBottom variant="h5" component="div">
-														whereami
+														spacecrew
 													</Typography>
 													<Typography variant="body2" color="text.secondary">
-														Track your IP and location with a time stamp using
-														various APIs
-														<br />
+														Command a select crew to populate alien planets in
+														this game of numbers
 														<br />
 														<br />
 													</Typography>
@@ -260,9 +259,9 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://staswerno.github.io/whereami/"
+														href="https://staswerno.github.io/spacecrew/"
 														target="_blank"
-														alt="whereami site"
+														alt="spacecrew site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
@@ -276,9 +275,9 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/whereami"
+														href="https://github.com/staswerno/spacecrew"
 														target="_blank"
-														alt="whereami repo"
+														alt="spacecrew repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
