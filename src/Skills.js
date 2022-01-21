@@ -42,12 +42,15 @@ export default function Skills({ anchorFuncB }) {
 	const visibilityFuncB = (isVisible) => {
 		isVisible ? setInViewB(true) : setInViewB(false);
 	};
+	const pTop = 1.5;
+	const pBot = 1.5;
+
 	return (
 		<section id="skills">
 			<Paper
 				mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
 				sx={{
-					width: "90%",
+					width: { xs: "90%", lg: "80%" },
 
 					display: "flex",
 					backgroundColor: "#bac3c9",
@@ -63,11 +66,16 @@ export default function Skills({ anchorFuncB }) {
 						</Paper>
 					</Grid>
 
-					<Grid container justifyContent="space-around" alignItems="center">
-						<Grid item xs={9} sm={8} item md={6} m={3} mb={{ xs: 3, md: 8 }}>
+					<Grid
+						container
+						justifyContent="space-around"
+						alignItems="center"
+						px={{ xs: 0, lg: 4 }}
+					>
+						<Grid item xs={9} sm={8} md={6} m={3} mb={{ xs: 3, md: 7 }}>
 							<Grow in={inViewA} timeout={900}>
 								<Paper elevation={4}>
-									<Box px={4} py={2}>
+									<Box px={4} py={3}>
 										<Typography variant="h6" align="center" mb={2}>
 											tech skills
 										</Typography>
@@ -85,9 +93,10 @@ export default function Skills({ anchorFuncB }) {
 													alignItems="center"
 												>
 													{" "}
-													<Grid item>
+													<Grid item ml={{ xs: 0, lg: 2 }}>
 														<Zoom in={inViewA} timeout={1000}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -108,6 +117,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1100}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -128,6 +138,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1200}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -148,6 +159,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1300}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -168,6 +180,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1400}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -188,6 +201,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1500}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -207,9 +221,10 @@ export default function Skills({ anchorFuncB }) {
 															/>
 														</Zoom>
 													</Grid>
-													<Grid item>
+													<Grid item mr={{ xs: 0, lg: 2 }}>
 														<Zoom in={inViewA} timeout={1000}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -230,6 +245,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1100}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -250,6 +266,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1200}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -270,6 +287,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1300}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -290,6 +308,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1400}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -310,6 +329,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewA} timeout={1500}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
 																avatar={
 																	<Avatar
@@ -337,10 +357,10 @@ export default function Skills({ anchorFuncB }) {
 							</Grow>
 						</Grid>
 
-						<Grid item xs={9} sm={8} item md={4} m={3} mb={8}>
+						<Grid item xs={9} sm={8} md={4} m={3} mb={7}>
 							<Grow in={inViewB} timeout={1200}>
 								<Paper elevation={4}>
-									<Box px={4} py={2}>
+									<Box px={4} py={3}>
 										<Typography variant="h6" align="center" mb={2}>
 											other skills
 										</Typography>
@@ -361,6 +381,7 @@ export default function Skills({ anchorFuncB }) {
 													<Grid item>
 														<Zoom in={inViewB} timeout={1300}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Team Icon"
@@ -380,6 +401,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewB} timeout={1400}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Digital Icon"
@@ -399,6 +421,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewB} timeout={1500}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Music Icon"
@@ -418,6 +441,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewB} timeout={1600}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Diversity Icon"
@@ -437,6 +461,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewB} timeout={1700}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Bulb Icon"
@@ -456,6 +481,7 @@ export default function Skills({ anchorFuncB }) {
 														</Zoom>
 														<Zoom in={inViewB} timeout={1800}>
 															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																avatar={
 																	<Avatar
 																		alt="Communication Icon"

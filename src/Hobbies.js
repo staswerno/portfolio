@@ -41,14 +41,14 @@ export default function Hobbies({ anchorFuncD }) {
 			<Paper
 				mt={{ xs: 10, sm: 12, md: 6, lg: 6, xl: 3 }}
 				sx={{
-					width: "90%",
+					width: { xs: "90%", lg: "80%" },
 
 					display: "flex",
 					backgroundColor: "#bac3c9",
 					mx: "auto",
 				}}
 			>
-				<Grid container justifyContent="space-around" alignItems="center">
+				<Grid container justifyContent="center" alignItems="center">
 					<Grid item m={3} mt={6}>
 						<Paper sx={{ width: 210 }} elevation={4}>
 							<Typography variant="h5" align="center" px={4} py={2}>
@@ -56,8 +56,21 @@ export default function Hobbies({ anchorFuncD }) {
 							</Typography>
 						</Paper>
 					</Grid>
-					<Grid container justifyContent="space-around" alignItems="center">
-						<Grid item xs={9} sm={8} md={5} xl={4} mb={-2}>
+					<Grid
+						container
+						justifyContent="center"
+						alignItems="center"
+						//	px={{ xs: 0, lg: 4 }}
+					>
+						<Grid
+							item
+							xs={9}
+							sm={8}
+							md={5}
+							xl={4}
+							mb={{ xs: -2 }}
+							ml={{ xs: 0, md: 3 }}
+						>
 							<VisibilitySensor
 								onChange={visibilityFuncA}
 								partialVisibility={true}
@@ -89,9 +102,11 @@ export default function Hobbies({ anchorFuncD }) {
 											<Grid
 												container
 												justifyContent="space-around"
-												m={3}
+												mx={3}
+												//	mr={0}
 												mt={{ xs: 0, md: 3 }}
 												mb={{ xs: 0, sm: 3 }}
+												px={{ xs: 0, lg: 3, xl: 8 }}
 											>
 												<ModalPhoto
 													modalIcon={shan_icon}
@@ -124,6 +139,7 @@ export default function Hobbies({ anchorFuncD }) {
 												container
 												justifyContent="space-around"
 												m={3}
+												px={{ xs: 0, lg: 3, xl: 8 }}
 												mt={{ xs: 0, sm: 3 }}
 											>
 												<ModalPhoto

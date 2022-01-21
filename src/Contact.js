@@ -9,7 +9,7 @@ export default function Contact({ anchorFuncE }) {
 			<Box
 				mt={{ xs: 1, sm: 2, md: 6, lg: 6, xl: 3 }}
 				sx={{
-					width: "90%",
+					width: { xs: "90%", lg: "80%" },
 					display: "flex",
 					backgroundColor: "transparent",
 					mx: "auto",
@@ -30,7 +30,7 @@ export default function Contact({ anchorFuncE }) {
 						textAlign="right"
 						alignItems="center"
 						direction="column"
-						mb={{ xs: 6, md: 6 }}
+						mb={{ xs: 4, md: 4 }}
 					>
 						<VisibilitySensor onChange={anchorFuncE} partialVisibility={false}>
 							<ContactForm />

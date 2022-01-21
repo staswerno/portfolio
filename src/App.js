@@ -51,6 +51,7 @@ function App() {
 			<CssBaseline />
 			<div className="App">
 				<header>
+					<section id="about">.</section>
 					<NavBar pageAnchorHighlight={pageAnchorHighlight} />
 				</header>
 				<main>

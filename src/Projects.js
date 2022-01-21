@@ -67,7 +67,7 @@ export default function Projects({ anchorFuncC }) {
 			<Box
 				mt={{ xs: 1, sm: 2, md: 9 }}
 				sx={{
-					width: "90%",
+					width: { xs: "90%", lg: "83%", xl: "79%" },
 
 					display: "flex",
 					backgroundColor: "transparent",
@@ -87,9 +87,10 @@ export default function Projects({ anchorFuncC }) {
 							container
 							justifyContent="space-around"
 							alignItems="center"
-							mb={{ xs: 3, md: 6 }}
+							mb={{ xs: 3, md: 12, lg: 7 }}
+							px={{ xs: 0, md: 5 }}
 						>
-							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
+							<Grid item m={3} mb={{ xs: 3, lg: 9 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncA}
 									partialVisibility={true}
@@ -192,7 +193,7 @@ export default function Projects({ anchorFuncC }) {
 									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
-							<Grid item m={3} mb={{ xs: 3, md: 10 }}>
+							<Grid item m={3} mb={{ xs: 3, lg: 9 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncB}
 									partialVisibility={true}
@@ -292,7 +293,7 @@ export default function Projects({ anchorFuncC }) {
 									</VisibilitySensor>
 								</VisibilitySensor>
 							</Grid>
-							<Grid item m={3} mb={{ xs: 5, md: 10 }}>
+							<Grid item m={3} mb={{ xs: 3, lg: 9 }}>
 								<VisibilitySensor
 									onChange={visibilityFuncC}
 									partialVisibility={true}
