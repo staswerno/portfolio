@@ -5,6 +5,7 @@ import bell from "./images/bell.png";
 import daisy from "./images/daisy.jpg";
 import octavia from "./images/octavia.png";
 import playing from "./images/playing.png";
+import baby from "./images/baby.jpeg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -62,8 +63,18 @@ export default function DrawingCarousel({ inViewA }) {
 							<CardMedia
 								component="img"
 								height="100%"
+								image={baby}
+								alt="baby drawing"
+							/>
+						</Card>
+					</Box>
+					<Box p={3}>
+						<Card sx={{ maxWidth: 527 }} elevation={4}>
+							<CardMedia
+								component="img"
+								height="100%"
 								image={playing}
-								alt="siblings playing drawing"
+								alt="playing drawing"
 							/>
 						</Card>
 					</Box>

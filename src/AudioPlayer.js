@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Grow, Slider, styled, Stack } from "@mui/material";
+import { Grow, Slider, styled, Stack, CardMedia } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import albumart from "./images/albumart.png";
@@ -52,6 +52,7 @@ export default function AudioPlayer({ inViewC }) {
 		objectFit: "cover",
 		overflow: "hidden",
 		flexShrink: 0,
+		zIndex: 1,
 		borderRadius: 8,
 		backgroundColor: "rgba(0,0,0,0.08)",
 		"& > img": {
@@ -144,94 +145,133 @@ export default function AudioPlayer({ inViewC }) {
 		<Grow in={inViewC} timeout={1200}>
 			<Box>
 				<Card
-					sx={
-						isPlaying
-							? {
-									backgroundColor: "var(--active-color)",
-									animation: "colorChange 20s alternate infinite",
-							  }
-							: {
-									backgroundColor: "#c09da7",
-							  }
-					}
+					// sx={
+					// 	isPlaying
+					// 		? {
+					// 				backgroundColor: "var(--active-color)",
+					// 				animation: "colorChange 20s alternate infinite",
+					// 		  }
+					// 		: {
+					// 				backgroundColor: "#c09da7",
+					// 		  }
+					// }
 					elevation={4}
 				>
-					<Stack
-						direction="row"
-						spacing={0}
-						alignItems="center"
-						justifyContent="space-around"
+					<Box
+						sx={{
+							overflow: "hidden",
+						}}
+						style={{
+							position: "relative",
+						}}
 					>
-						<Box pl={2}>
-							<CoverImage>
-								<img
-									alt={`track artwork for ${title} by ${artist}`}
-									src={image}
-								/>
-							</CoverImage>
-						</Box>
-						<Box
-							sx={{
-								display: "flex",
-								flexDirection: "column",
-								justifyContent: "center",
-								minWidth: "175px",
-							}}
+						<Stack
+							direction="row"
+							spacing={0}
+							alignItems="center"
+							justifyContent="space-around"
 						>
-							<AudioControls
-								isPlaying={isPlaying}
-								onPrevClick={toPrevTrack}
-								onNextClick={toNextTrack}
-								onPlayPauseClick={setIsPlaying}
-							/>
+							<Box pl={2}>
+								<Box>
+									<CoverImage>
+										<img
+											style={{
+												position: "relative",
+												zIndex: 1,
+											}}
+											alt={`track artwork for ${title} by ${artist}`}
+											src={image}
+										/>
+									</CoverImage>
+								</Box>
+							</Box>
+							<div
+								style={
+									isPlaying
+										? {
+												backgroundColor: "var(--active-color)",
+												animation: "colorChange 20s alternate infinite",
+												position: "absolute",
+												top: 0,
+												left: 0,
+												right: 0,
+												bottom: 0,
+												zIndex: 0,
+										  }
+										: {
+												backgroundColor: "#c09da7",
+												position: "absolute",
+												top: 0,
+												left: 0,
+												right: 0,
+												bottom: 0,
+												zIndex: 0,
+										  }
+								}
+							></div>
 							<Box
 								sx={{
 									display: "flex",
-									alignItems: "center",
+									flexDirection: "column",
 									justifyContent: "center",
-									pl: 1,
-									pb: 1,
-									width: "80%",
-									mx: "auto",
+									minWidth: "175px",
 								}}
 							>
-								<Slider
-									color="error"
-									aria-label="time-indicator"
-									size="small"
-									value={trackProgress}
-									min={0}
-									step={1}
-									max={duration}
-									onChange={(e) => onScrub(e.target.value)}
-									onMouseUp={onScrubEnd}
-									onKeyUp={onScrubEnd}
-									sx={{
-										color: "#fff",
-										height: 4,
-										"& .MuiSlider-thumb": {
-											width: 8,
-											height: 8,
-											transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
-											"&:before": {
-												boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
-											},
-											"&:hover, &.Mui-focusVisible": {
-												boxShadow: `0px 0px 0px 8px ${"rgb(255 255 255 / 16%)"}`,
-											},
-											"&.Mui-active": {
-												width: 20,
-												height: 20,
-											},
-										},
-										"& .MuiSlider-rail": {
-											opacity: 0.28,
-										},
-									}}
+								<AudioControls
+									isPlaying={isPlaying}
+									onPrevClick={toPrevTrack}
+									onNextClick={toNextTrack}
+									onPlayPauseClick={setIsPlaying}
 								/>
+								<Box
+									sx={{
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										pl: 1,
+										pb: 1,
+										width: "80%",
+										mx: "auto",
+									}}
+								>
+									<Slider
+										color="error"
+										aria-label="time-indicator"
+										size="small"
+										value={trackProgress}
+										min={0}
+										step={1}
+										max={duration}
+										onChange={(e) => onScrub(e.target.value)}
+										onMouseUp={onScrubEnd}
+										onKeyUp={onScrubEnd}
+										sx={{
+											color: "#fff",
+											height: 4,
+											"& .MuiSlider-thumb": {
+												width: 8,
+												height: 8,
+												transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
+												"&:before": {
+													boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)",
+												},
+												"&:hover, &.Mui-focusVisible": {
+													boxShadow: `0px 0px 0px 8px ${"rgb(255 255 255 / 16%)"}`,
+												},
+												"&.Mui-active": {
+													width: 20,
+													height: 20,
+												},
+											},
+											"& .MuiSlider-rail": {
+												opacity: 0.28,
+											},
+										}}
+									/>
+								</Box>
 							</Box>
-						</Box>
-					</Stack>
+						</Stack>
+					</Box>
 				</Card>
 			</Box>
 		</Grow>
