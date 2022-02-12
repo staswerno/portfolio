@@ -12,7 +12,8 @@ import {
 } from "@mui/material";
 import spaceblog from "./images/project-spaceblog.png";
 import spacecrew from "./images/project-spacecrew.png";
-import ghostlolly from "./images/project-ghostlolly.png";
+import moodiesa from "./images/project-moodies-a.png";
+import moodiesb from "./images/project-moodies-b.png";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 
@@ -121,8 +122,8 @@ export default function Projects({ anchorFuncC }) {
 													<CardMedia
 														component="img"
 														height="140"
-														image={spaceblog}
-														alt="space blog"
+														image={moodiesb}
+														alt="moodies"
 														style={cardHover ? mouseOnStyle : mouseOffStyle}
 													/>
 													<Box>
@@ -136,21 +137,20 @@ export default function Projects({ anchorFuncC }) {
 														>
 															<br />
 															<br />
-															react | material ui | contentful
+															full mern stack | tailwind css
 														</Typography>
 													</Box>
 												</Box>
 
 												<CardContent>
 													<Typography gutterBottom variant="h5" component="div">
-														space blog
+														moodies
 													</Typography>
 
 													<Typography variant="body2" color="text.secondary">
-														A Space Blog with a dark mode, making use of various
-														API's, headless CMS and iFrame
-														<br />
-														<br />
+														Movie suggestions based on mood and subscription
+														service. User accounts with profiles and
+														personalised playlists.
 													</Typography>
 												</CardContent>
 
@@ -160,9 +160,9 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://staswerno.github.io/space-blog/"
+														href="https://get-moodies.github.io/moodies/"
 														target="_blank"
-														alt="space blog site"
+														alt="moodies site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
@@ -176,9 +176,9 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/space-blog"
+														href="https://github.com/get-moodies"
 														target="_blank"
-														alt="space blog repo"
+														alt="moodies repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
@@ -222,7 +222,7 @@ export default function Projects({ anchorFuncC }) {
 														component="img"
 														height="140"
 														image={spacecrew}
-														alt="where am i"
+														alt="spacecrew"
 														style={cardHoverB ? mouseOnStyle : mouseOffStyle}
 													/>
 													<Box>
@@ -238,7 +238,7 @@ export default function Projects({ anchorFuncC }) {
 														>
 															<br />
 															<br />
-															mern stack
+															full mern stack
 														</Typography>
 													</Box>
 												</Box>
@@ -248,9 +248,9 @@ export default function Projects({ anchorFuncC }) {
 														spacecrew
 													</Typography>
 													<Typography variant="body2" color="text.secondary">
-														Command a select crew to populate alien planets in
-														this game of numbers
-														<br />
+														A game using numbers based logic in which you
+														command selected skilled crewmembers to populate
+														alien planets.
 														<br />
 													</Typography>
 												</CardContent>
@@ -324,8 +324,8 @@ export default function Projects({ anchorFuncC }) {
 													<CardMedia
 														component="img"
 														height="140"
-														image={ghostlolly}
-														alt="ghost lolly"
+														image={spaceblog}
+														alt="space blog"
 														style={cardHoverC ? mouseOnStyle : mouseOffStyle}
 													/>
 													<Box>
@@ -341,30 +341,33 @@ export default function Projects({ anchorFuncC }) {
 														>
 															<br />
 															<br />
-															react | context
+															react | material ui | contentful
 														</Typography>
 													</Box>
 												</Box>
 
 												<CardContent>
 													<Typography gutterBottom variant="h5" component="div">
-														ghost lolly
+														space [b]log
 													</Typography>
+
 													<Typography variant="body2" color="text.secondary">
-														A responsive lolly/ghost color/mood picker with a
-														dark mode (both toggle and os/browser detection)
+														A Space [b]Log with a lovely dark mode, making use
+														of various API's, such as NASA's APOD, and headless
+														CMS.
 														<br />
 													</Typography>
 												</CardContent>
+
 												<CardActions>
 													<Button
 														size="small"
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://csb-5yf7x.netlify.app/"
+														href="https://staswerno.github.io/space-blog/"
 														target="_blank"
-														alt="ghost lolly site"
+														alt="space blog site"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
@@ -378,9 +381,9 @@ export default function Projects({ anchorFuncC }) {
 														variant="contained"
 														disableElevation
 														color="secondary"
-														href="https://github.com/staswerno/ghost-lolly"
+														href="https://github.com/staswerno/space-blog"
 														target="_blank"
-														alt="ghost lolly repo"
+														alt="space blog repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",
