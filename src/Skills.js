@@ -20,6 +20,7 @@ import nodeicon from "./images/icon-node.png";
 import reacticon from "./images/icon-react.png";
 import sqlicon from "./images/icon-sql.png";
 import uxicon from "./images/icon-ux.png";
+import tailwindicon from "./images/icon-tailwind.png";
 
 import teamicon from "./images/icon-team.png";
 import digitalicon from "./images/icon-digital.png";
@@ -228,6 +229,27 @@ export default function Skills({ anchorFuncB }) {
 																color="#000000"
 																avatar={
 																	<Avatar
+																		alt="Tailwind Icon"
+																		src={tailwindicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		Tailwind CSS
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1100}>
+															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
+																color="#000000"
+																avatar={
+																	<Avatar
 																		alt="Node Icon"
 																		src={nodeicon}
 																		variant="square"
@@ -243,7 +265,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1100}>
+														<Zoom in={inViewA} timeout={1200}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -264,7 +286,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1200}>
+														<Zoom in={inViewA} timeout={1300}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -285,7 +307,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1300}>
+														<Zoom in={inViewA} timeout={1400}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -306,7 +328,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1400}>
+														<Zoom in={inViewA} timeout={1500}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -323,27 +345,6 @@ export default function Skills({ anchorFuncB }) {
 																		variant="body2"
 																	>
 																		Git/GitHub
-																	</Typography>
-																}
-															/>
-														</Zoom>
-														<Zoom in={inViewA} timeout={1500}>
-															<CardHeader
-																sx={{ paddingTop: pTop, paddingBottom: pBot }}
-																color="#000000"
-																avatar={
-																	<Avatar
-																		alt="UX Icon"
-																		src={uxicon}
-																		variant="square"
-																	/>
-																}
-																title={
-																	<Typography
-																		color="text.secondary"
-																		variant="body2"
-																	>
-																		UX/UI
 																	</Typography>
 																}
 															/>
