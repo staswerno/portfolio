@@ -15,6 +15,7 @@ import bootstrapicon from "./images/icon-bootstrap.png";
 import expressicon from "./images/icon-express.png";
 import giticon from "./images/icon-git.png";
 import jsicon from "./images/icon-js.png";
+import tsicon from "./images/icon-typescript.png";
 import mongoicon from "./images/icon-mongo.png";
 import nodeicon from "./images/icon-node.png";
 import reacticon from "./images/icon-react.png";
@@ -164,6 +165,27 @@ export default function Skills({ anchorFuncB }) {
 																color="#000000"
 																avatar={
 																	<Avatar
+																		alt="TypeScript Icon"
+																		src={tsicon}
+																		variant="square"
+																	/>
+																}
+																title={
+																	<Typography
+																		color="text.secondary"
+																		variant="body2"
+																	>
+																		TypeScript
+																	</Typography>
+																}
+															/>
+														</Zoom>
+														<Zoom in={inViewA} timeout={1400}>
+															<CardHeader
+																sx={{ paddingTop: pTop, paddingBottom: pBot }}
+																color="#000000"
+																avatar={
+																	<Avatar
 																		alt="React Icon"
 																		src={reacticon}
 																		variant="square"
@@ -179,7 +201,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1400}>
+														<Zoom in={inViewA} timeout={1500}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -200,7 +222,7 @@ export default function Skills({ anchorFuncB }) {
 																}
 															/>
 														</Zoom>
-														<Zoom in={inViewA} timeout={1500}>
+														{/* <Zoom in={inViewA} timeout={1500}>
 															<CardHeader
 																sx={{ paddingTop: pTop, paddingBottom: pBot }}
 																color="#000000"
@@ -220,7 +242,7 @@ export default function Skills({ anchorFuncB }) {
 																	</Typography>
 																}
 															/>
-														</Zoom>
+														</Zoom> */}
 													</Grid>
 													<Grid item mr={{ xs: 0, lg: 2 }}>
 														<Zoom in={inViewA} timeout={1000}>
