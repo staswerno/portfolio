@@ -11,7 +11,6 @@ import {
 import muiicon from "./images/icon-mui.png";
 import htmlicon from "./images/icon-html.png";
 import cssicon from "./images/icon-css.png";
-import bootstrapicon from "./images/icon-bootstrap.png";
 import expressicon from "./images/icon-express.png";
 import giticon from "./images/icon-git.png";
 import jsicon from "./images/icon-js.png";
@@ -20,7 +19,6 @@ import mongoicon from "./images/icon-mongo.png";
 import nodeicon from "./images/icon-node.png";
 import reacticon from "./images/icon-react.png";
 import sqlicon from "./images/icon-sql.png";
-import uxicon from "./images/icon-ux.png";
 import tailwindicon from "./images/icon-tailwind.png";
 
 import teamicon from "./images/icon-team.png";
