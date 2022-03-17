@@ -75,7 +75,7 @@ export default function Intro({ anchorFuncA }) {
 										<br />
 									</Typography>
 									<Typography variant="body1" color="text.secondary" mb={2}>
-										Creatively minded and passionate about music, I have
+										Creatively minded and passionate about coding, I have
 										invaluable experience working with development teams and
 										tools in the music industry.
 									</Typography>
