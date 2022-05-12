@@ -131,7 +131,7 @@ export default function Skills({ anchorFuncB }) {
 																		color="text.secondary"
 																		variant="body2"
 																	>
-																		CSS3
+																		CSS3 / Sass
 																	</Typography>
 																}
 															/>
