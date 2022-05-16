@@ -71,7 +71,9 @@ export default function Intro({ anchorFuncA }) {
 								<Box p={4}>
 									<Typography variant="h6" mb={2}>
 										hi, i’m staś. <br />
-										i’m a frontend / fullstack developer.
+										i’m a web and app developer.
+										<br />
+										i enjoy working both frontend and fullstack.
 										<br />
 									</Typography>
 									<Typography variant="body1" color="text.secondary" mb={2}>
