@@ -137,7 +137,8 @@ export default function Projects({ anchorFuncC }) {
 														>
 															<br />
 															<br />
-															full mern stack | tailwind css
+															full mern stack | tailwind css{" "}
+															<div> [ frontend ]</div>
 														</Typography>
 													</Box>
 												</Box>
@@ -207,106 +208,6 @@ export default function Projects({ anchorFuncC }) {
 												elevation={4}
 												onMouseEnter={() => setCardHoverB(true)}
 												onMouseLeave={() => setCardHoverB(false)}
-												sx={{ maxWidth: 250, height: 340 }}
-											>
-												<Box
-													sx={{
-														overflow: "hidden",
-														backgroundColor: "#202020",
-													}}
-													style={{
-														position: "relative",
-													}}
-												>
-													<CardMedia
-														component="img"
-														height="140"
-														image={spacecrew}
-														alt="spacecrew"
-														style={cardHoverB ? mouseOnStyle : mouseOffStyle}
-													/>
-													<Box>
-														<Typography
-															variant="body1"
-															width="100%"
-															textAlign="center"
-															style={
-																cardHoverB
-																	? mouseOnStyleText
-																	: mouseOffStyleText
-															}
-														>
-															<br />
-															<br />
-															full mern stack
-														</Typography>
-													</Box>
-												</Box>
-
-												<CardContent>
-													<Typography gutterBottom variant="h5" component="div">
-														spacecrew
-													</Typography>
-													<Typography variant="body2" color="text.secondary">
-														A game using numbers based logic in which you
-														command selected skilled crewmembers to populate
-														alien planets.
-														<br />
-													</Typography>
-												</CardContent>
-												<CardActions>
-													<Button
-														size="small"
-														variant="contained"
-														disableElevation
-														color="secondary"
-														href="https://staswerno.github.io/spacecrew/"
-														target="_blank"
-														alt="spacecrew site"
-														sx={{
-															":hover": {
-																bgcolor: "secondary.main",
-															},
-														}}
-													>
-														visit
-													</Button>
-													<Button
-														size="small"
-														variant="contained"
-														disableElevation
-														color="secondary"
-														href="https://github.com/staswerno/spacecrew"
-														target="_blank"
-														alt="spacecrew repo"
-														sx={{
-															":hover": {
-																bgcolor: "secondary.main",
-															},
-														}}
-													>
-														code
-													</Button>
-												</CardActions>
-											</Card>
-										</Grow>
-									</VisibilitySensor>
-								</VisibilitySensor>
-							</Grid>
-							<Grid item m={3} mb={{ xs: 3, lg: 9 }}>
-								<VisibilitySensor
-									onChange={visibilityFuncC}
-									partialVisibility={true}
-								>
-									<VisibilitySensor
-										onChange={anchorFuncC}
-										partialVisibility={true}
-									>
-										<Grow in={inViewC} timeout={1500}>
-											<Card
-												elevation={4}
-												onMouseEnter={() => setCardHoverC(true)}
-												onMouseLeave={() => setCardHoverC(false)}
 												sx={{
 													maxWidth: 260,
 													height: 340,
@@ -326,7 +227,7 @@ export default function Projects({ anchorFuncC }) {
 														height="140"
 														image={spaceblog}
 														alt="space blog"
-														style={cardHoverC ? mouseOnStyle : mouseOffStyle}
+														style={cardHoverB ? mouseOnStyle : mouseOffStyle}
 													/>
 													<Box>
 														<Typography
@@ -334,7 +235,7 @@ export default function Projects({ anchorFuncC }) {
 															width="100%"
 															textAlign="center"
 															style={
-																cardHoverC
+																cardHoverB
 																	? mouseOnStyleText
 																	: mouseOffStyleText
 															}
@@ -342,6 +243,7 @@ export default function Projects({ anchorFuncC }) {
 															<br />
 															<br />
 															react | material ui | contentful
+															<div> [ frontend ]</div>
 														</Typography>
 													</Box>
 												</Box>
@@ -384,6 +286,106 @@ export default function Projects({ anchorFuncC }) {
 														href="https://github.com/staswerno/space-blog"
 														target="_blank"
 														alt="space blog repo"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+															},
+														}}
+													>
+														code
+													</Button>
+												</CardActions>
+											</Card>
+										</Grow>
+									</VisibilitySensor>
+								</VisibilitySensor>
+							</Grid>
+							<Grid item m={3} mb={{ xs: 3, lg: 9 }}>
+								<VisibilitySensor
+									onChange={visibilityFuncC}
+									partialVisibility={true}
+								>
+									<VisibilitySensor
+										onChange={anchorFuncC}
+										partialVisibility={true}
+									>
+										<Grow in={inViewC} timeout={1500}>
+											<Card
+												elevation={4}
+												onMouseEnter={() => setCardHoverC(true)}
+												onMouseLeave={() => setCardHoverC(false)}
+												sx={{ maxWidth: 250, height: 340 }}
+											>
+												<Box
+													sx={{
+														overflow: "hidden",
+														backgroundColor: "#202020",
+													}}
+													style={{
+														position: "relative",
+													}}
+												>
+													<CardMedia
+														component="img"
+														height="140"
+														image={spacecrew}
+														alt="spacecrew"
+														style={cardHoverC ? mouseOnStyle : mouseOffStyle}
+													/>
+													<Box>
+														<Typography
+															variant="body1"
+															width="100%"
+															textAlign="center"
+															style={
+																cardHoverC
+																	? mouseOnStyleText
+																	: mouseOffStyleText
+															}
+														>
+															<br />
+															<br />
+															full mern stack <div> [ backend ]</div>
+														</Typography>
+													</Box>
+												</Box>
+
+												<CardContent>
+													<Typography gutterBottom variant="h5" component="div">
+														spacecrew
+													</Typography>
+													<Typography variant="body2" color="text.secondary">
+														A game using numbers based logic in which you
+														command selected skilled crewmembers to populate
+														alien planets.
+														<br />
+													</Typography>
+												</CardContent>
+												<CardActions>
+													<Button
+														size="small"
+														variant="contained"
+														disableElevation
+														color="secondary"
+														href="https://staswerno.github.io/spacecrew/"
+														target="_blank"
+														alt="spacecrew site"
+														sx={{
+															":hover": {
+																bgcolor: "secondary.main",
+															},
+														}}
+													>
+														visit
+													</Button>
+													<Button
+														size="small"
+														variant="contained"
+														disableElevation
+														color="secondary"
+														href="https://github.com/staswerno/spacecrew"
+														target="_blank"
+														alt="spacecrew repo"
 														sx={{
 															":hover": {
 																bgcolor: "secondary.main",

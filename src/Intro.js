@@ -71,15 +71,13 @@ export default function Intro({ anchorFuncA }) {
 								<Box p={4}>
 									<Typography variant="h6" mb={2}>
 										hi, i’m staś. <br />
-										i’m a web and app developer.
-										<br />
-										i enjoy working both frontend and fullstack.
+										i’m a frontend web and app developer.
 										<br />
 									</Typography>
 									<Typography variant="body1" color="text.secondary" mb={2}>
 										Creatively minded and passionate about coding, I have
 										invaluable experience working with development teams and
-										tools in the music industry.
+										tools in the music industry and beyond.
 									</Typography>
 									<Typography variant="body1" color="text.secondary" mb={2}>
 										I am motivated by social change, mental health and
